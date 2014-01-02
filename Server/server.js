@@ -18,7 +18,7 @@ function onRequest(req,res){
     req.on('data',function(chunk){
         _postData += chunk;
     }).on('end',function(){
-            req.post = querystring.parse(_postData);
+            req.post = _postData;
             router.handleRequest(req,res);
     });
 
