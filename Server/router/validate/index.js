@@ -1,6 +1,6 @@
 var crypto=require("crypto");
 exports.index = function(req,res){
-    var query = req.post;
+    var query = req.getData;
     if(query){
         var signature = query.signature;
         var echostr = query.echostr;
