@@ -5,6 +5,7 @@ exports.index = function(req,res){
         var signature = query.signature;
         var echostr = query.echostr;
         var timestamp = query['timestamp'];
+        console.log(req.post);
         console.log(signature+"  "+echostr+"  "+timestamp);
         var nonce = query.nonce;
         var oriArray = new Array();
