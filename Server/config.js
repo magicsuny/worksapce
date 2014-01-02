@@ -4,6 +4,6 @@
 module.exports = {
     MODE: 'dev',
     LOG_LEVEL:'DEBUG',
-    LISTEN_PORT: 3000
+    LISTEN_PORT: 80
 
 };
