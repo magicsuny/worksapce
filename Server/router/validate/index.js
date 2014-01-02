@@ -209,7 +209,7 @@ function processMessage(data,response){
                 msg="你发的图片是："+PicUrl;
             }
             messageSender.sendTextMessage(FromUserName,ToUserName,CreateTime,msg,FuncFlag,response);
-            res.end('<xml><ToUserName><![CDATA['+FromUserName+']]></ToUserName><FromUserName><![CDATA['+ToUserName+']]></FromUserName><CreateTime>'+CreateTime+'</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你好]]></Content></xml>');
+            response.end('<xml><ToUserName><![CDATA['+FromUserName+']]></ToUserName><FromUserName><![CDATA['+ToUserName+']]></FromUserName><CreateTime>'+CreateTime+'</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你好]]></Content></xml>');
 
         });
     });
