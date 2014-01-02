@@ -1,0 +1,16 @@
+{
+    "name": "TimePill-Server",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node app"
+    },
+    "author": "SunYao",
+    "dependencies": {
+        "socket.io": "*",
+        "underscore":"*",
+        "protobufjs":"*",
+        "mysql":"*",
+        "log4js":"0.5.7"
+    }
+}
