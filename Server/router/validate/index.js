@@ -208,7 +208,6 @@ function processMessage(data,response){
             }else if (MsgType="image"){
                 msg="你发的图片是："+PicUrl;
             }
-            messageSender.sendTextMessage(FromUserName,ToUserName,CreateTime,msg,FuncFlag,response);
             response.end('<xml><ToUserName><![CDATA['+FromUserName+']]></ToUserName><FromUserName><![CDATA['+ToUserName+']]></FromUserName><CreateTime>'+CreateTime+'</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你好]]></Content></xml>');
 
         });
