@@ -26,6 +26,7 @@ exports.index = function(req,res){
 }
 
 function checkSignature(query){
+    console.log(query);
     var signature = query.signature;
     var echostr = query.echostr;
     var timestamp = query['timestamp'];
