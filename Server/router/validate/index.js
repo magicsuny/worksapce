@@ -1,3 +1,4 @@
+var crypto=require("crypto");
 exports.index = function(req,res){
     var query = req.post;
     if(query){
@@ -10,10 +11,13 @@ exports.index = function(req,res){
         oriArray[1] = timestamp;
         oriArray[2] = "magic";//这里填写你的token
         oriArray.sort();
+
         var original = oriArray[0]+oriArray[1]+oriArray[2];
         console.log("Original Str:"+original);
         console.log("signature:"+signature);
-        var scyptoString = sha1(original);
+        var hasher=crypto.createHash("sha1");
+        hasher.update(original);
+        var scyptoString=hasher.digest('hex');
         if (signature == scyptoString) {
             res.send(echostr);
         }
