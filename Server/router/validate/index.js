@@ -45,7 +45,7 @@ function checkSignature(query){
     hasher.update(original);
     var scyptoString=hasher.digest('hex');
     if (signature == scyptoString) {
-        return echostr;
+        return echostr?echostr:true;
     }
     else {
         return false;
