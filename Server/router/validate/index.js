@@ -9,6 +9,7 @@ exports.index = function(req,res){
         var echostr = checkSignature(query);
         if(echostr){
             console.log(req.post);
+            requestAccessToken();
             res.end(echostr);
         }else{
             res.end("Bad Token!");
@@ -44,9 +45,9 @@ function checkSignature(query){
 
 function requestAccessToken(){
     var options = {
-        hostname: 'api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid='+APP_ID+'&secret='+APP_SECRET,
+        hostname: 'api.weixin.qq.com',
         port: 443,
-        path: '/',
+        path: '/cgi-bin/token?grant_type=client_credential&appid='+APP_ID+'&secret='+APP_SECRET,
         method: 'GET'
     };
 
@@ -55,8 +56,67 @@ function requestAccessToken(){
         console.log("headers: ", res.headers);
 
         res.on('data', function(d) {
-
+            if(d.access_token){
+                createMenu(d.access_token);
+            }
         });
+    });
+    req.end();
+
+    req.on('error', function(e) {
+        console.error(e);
+    });
+}
+
+
+function createMenu(accessToken){
+    var options = {
+        hostname: 'api.weixin.qq.com',
+        port: 443,
+        path: '/cgi-bin/menu/create?access_token='+accessToken,
+        method: 'POST'
+    };
+    var req = https.request(options, function(res) {
+         console.log("statusCode: ", res.statusCode);
+         console.log("headers: ", res.headers);
+
+         res.on('data', function(d) {
+             if(d.access_token){
+
+             }
+         });
+    });
+    req.write({
+        "button":[
+            {
+                "type":"click",
+                "name":"今日歌曲",
+                "key":"V1001_TODAY_MUSIC"
+            },
+            {
+                "type":"click",
+                "name":"歌手简介",
+                "key":"V1001_TODAY_SINGER"
+            },
+            {
+                "name":"菜单",
+                "sub_button":[
+                    {
+                        "type":"view",
+                        "name":"搜索",
+                        "url":"http://www.soso.com/"
+                    },
+                    {
+                        "type":"view",
+                        "name":"视频",
+                        "url":"http://v.qq.com/"
+                    },
+                    {
+                        "type":"click",
+                        "name":"赞一下我们",
+                        "key":"V1001_GOOD"
+                    }]
+            }]
     });
     req.end();
 
