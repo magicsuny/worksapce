@@ -19,7 +19,6 @@ function checkSignature(query){
     var signature = query.signature;
     var echostr = query.echostr;
     var timestamp = query['timestamp'];
-    console.log(req.getData);
     console.log(signature+"  "+echostr+"  "+timestamp);
     var nonce = query.nonce;
     var oriArray = new Array();
