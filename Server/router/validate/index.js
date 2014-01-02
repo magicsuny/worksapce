@@ -12,6 +12,7 @@ exports.index = function(req,res){
         if(echostr){
             console.log(req.post);
             requestAccessToken();
+            console.log(req.method);
             if(req.method=='GET'){
                 res.end(echostr);
             }else{
