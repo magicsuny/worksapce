@@ -6,7 +6,8 @@ var APP_ID='wxbf10215040495193',
 exports.index = function(req,res){
     var query = req.getData;
     if(query){
-        if(checkSignature(query)){
+        var echostr = checkSignature(query);
+        if(echostr){
             console.log(req.post);
             res.end(echostr);
         }else{
@@ -34,7 +35,7 @@ function checkSignature(query){
     hasher.update(original);
     var scyptoString=hasher.digest('hex');
     if (signature == scyptoString) {
-        return true;
+        return echostr;
     }
     else {
         return false;
