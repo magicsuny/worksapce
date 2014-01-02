@@ -2,6 +2,7 @@
  * Created by sunharuka on 13-10-29.
  */
 var http = require('http'),
+    url = require('url'),
     socketio = require('socket.io'),
     router = require('./router'),
     querystring = require('querystring'),
@@ -9,7 +10,11 @@ var http = require('http'),
     logger = require('./app').getLogger('sys');
 
 function onRequest(req,res){
+    var _getData = '';
     var _postData = '';
+    var getQuery= url.parse(req.url).query;
+    _getData= querystring.parse(getQuery);
+    req.getData = _getData;
     req.on('data',function(chunk){
         _postData += chunk;
     }).on('end',function(){
