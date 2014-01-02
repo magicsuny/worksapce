@@ -19,10 +19,10 @@ exports.index = function(req,res){
         hasher.update(original);
         var scyptoString=hasher.digest('hex');
         if (signature == scyptoString) {
-            res.send(echostr);
+            res.end(echostr);
         }
         else {
-            res.send("Bad Token!");
+            res.end("Bad Token!");
         }
     }
 }
