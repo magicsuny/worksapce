@@ -158,11 +158,11 @@ function processMessage(data,response){
             if(tempName=="CreateTime"){
                 CreateTime=chars;
             }else if(tempName=="Location_X"){
-                Location_X=cdata;
+                Location_X=chars;
             }else if(tempName=="Location_Y"){
-                Location_Y=cdata;
+                Location_Y=chars;
             }else if(tempName=="Scale"){
-                Scale=cdata;
+                Scale=chars;
             }
 
 

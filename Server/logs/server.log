@@ -291,3 +291,28 @@ Error: Cannot wrap null or non-object
 [2013-11-26 11:43:51.190] [INFO] sys - server is running!
 [2013-12-30 11:09:07.650] [INFO] sys - server is running!
 [2013-12-30 11:09:43.487] [INFO] sys - server is running!
+[2014-01-02 19:05:47.137] [INFO] sys - server is running!
+[2014-01-02 19:05:57.437] [INFO] sys - server is running!
+[2014-01-02 19:06:09.102] [INFO] router - 找不到路径
+[2014-01-02 19:06:39.377] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-01-02 19:06:39.380] [DEBUG] router - 无法找到 ./模块
+[2014-01-02 19:06:39.382] [DEBUG] router - 无法找到 ./模块
+[2014-01-02 19:06:39.382] [INFO] router - 找不到路径
+[2014-01-02 19:12:06.410] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-01-02 19:12:06.413] [DEBUG] router - 无法找到 ./模块
+[2014-01-02 19:12:06.415] [DEBUG] router - 无法找到 ./模块
+[2014-01-02 19:12:06.415] [INFO] router - 找不到路径
+[2014-01-02 19:12:55.770] [INFO] sys - server is running!
+[2014-01-02 19:13:09.917] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-01-02 19:13:09.919] [DEBUG] router - 无法找到 ./模块
+[2014-01-02 19:13:09.921] [DEBUG] router - 无法找到 ./模块
+[2014-01-02 19:13:09.921] [INFO] router - 找不到路径
+[2014-01-02 19:15:09.917] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-01-02 19:15:09.919] [DEBUG] router - 无法找到 ./模块
+[2014-01-02 19:15:09.920] [DEBUG] router - 无法找到 ./模块
+[2014-01-02 19:15:09.920] [INFO] router - 找不到路径
+[2014-01-02 20:11:32.096] [INFO] sys - server is running!
+[2014-01-02 20:29:59.948] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-01-02 20:29:59.950] [DEBUG] router - 无法找到 ./模块
+[2014-01-02 20:29:59.952] [DEBUG] router - 无法找到 ./模块
+[2014-01-02 20:29:59.952] [INFO] router - 找不到路径
