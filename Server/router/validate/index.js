@@ -164,7 +164,7 @@ function processMessage(data,response){
             }else if(tempName=="Scale"){
                 Scale=chars;
             }
-
+            console.log(chars);
 
         });
 
