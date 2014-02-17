@@ -99,8 +99,9 @@ function createMenu(accessToken){
         "button":[
             {
                 "type":"click",
-                "name":"今日歌曲",
-                "key":"V1001_TODAY_MUSIC"
+                "name":"公司简介",
+                "key":"V1001_TODAY_MUSIC",
+                "url":"http://www.baidu.com/"
             },
             {
                 "type":"click",
@@ -111,7 +112,7 @@ function createMenu(accessToken){
                 "name":"菜单",
                 "sub_button":[
                     {
-                        "type":"view",
+                        "type":"click",
                         "name":"搜索",
                         "url":"http://www.soso.com/"
                     },
