@@ -6,7 +6,7 @@ var APP_ID='wxbf10215040495193',
     TOKEN='magic';
 exports.index = function(req,res){
     var query = req.getData;
-
+    console.log(query);
     if(query){
         var echostr = checkSignature(query);
         if(echostr){
