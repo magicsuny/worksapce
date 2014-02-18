@@ -112,8 +112,8 @@ function createMenu(accessToken){
                 "name":"菜单",
                 "sub_button":[
                     {
-                        "type":"click",
-                        "name":"搜索",
+                        "type":"view",
+                        "name":"预约保养",
                         "url":"http://www.soso.com/"
                     },
                     {
