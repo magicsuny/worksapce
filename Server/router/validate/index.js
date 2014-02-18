@@ -79,22 +79,7 @@ function requestAccessToken(){
 
 
 function createMenu(accessToken){
-    var options = {
-        hostname: 'api.weixin.qq.com',
-        port: 443,
-        path: '/cgi-bin/menu/create?access_token='+accessToken,
-        method: 'POST'
-    };
-    var req = https.request(options, function(res) {
-         console.log("statusCode: ", res.statusCode);
-         console.log("headers: ", res.headers);
 
-         res.on('data', function(d) {
-             if(d.access_token){
-
-             }
-         });
-    });
     req.write({
         "button":[
             {
