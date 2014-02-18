@@ -114,7 +114,7 @@ function createMenu(accessToken){
                     {
                         "type":"view",
                         "name":"预约保养",
-                        "url":"http://www.soso.com/"
+                        "url":"http://106.187.50.51/orderform.html"
                     },
                     {
                         "type":"view",
