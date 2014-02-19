@@ -65,16 +65,19 @@ function requestAccessToken(){
     };
 
     var req = https.request(options, function(res) {
-
+        var body = "";
         res.on('data', function(data) {
+            body+=data;
 
-            console.log("request expired:"+data.expires_in);
-            console.log("request expired:"+data.access_token);
+        }).on('end',function(){
+                console.log("request expired:"+body.expires_in);
+                console.log("request expired:"+body.access_token);
 
-            if(data.access_token){
-                createMenu(data.access_token);
-            }
-        });
+                if(body.access_token){
+                    createMenu(body.access_token);
+                }
+            });
+        res.on
     });
     req.end();
 
