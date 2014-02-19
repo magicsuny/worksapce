@@ -62,9 +62,6 @@ function requestAccessToken(){
     };
 
     var req = https.request(options, function(res) {
-        console.log("statusCode: ", res.statusCode);
-        console.log("headers: ", res.headers);
-
         res.on('data', function(d) {
             if(d.access_token){
                 createMenu(d.access_token);
