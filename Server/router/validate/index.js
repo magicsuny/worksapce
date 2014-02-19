@@ -66,6 +66,7 @@ function requestAccessToken(){
         res.on('data', function(data) {
             console.log("request d:"+data);
             console.log("request expired:"+data.expires_in);
+            console.log("request expired:"+data.access_token);
             if(data.access_token){
                 createMenu(data.access_token);
             }
