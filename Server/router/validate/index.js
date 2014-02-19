@@ -63,11 +63,11 @@ function requestAccessToken(){
 
     var req = https.request(options, function(res) {
 
-        res.on('data', function(d) {
-            console.log("request d:"+d);
-            console.log("request accesstoken:"+d.access_token);
-            if(d.access_token){
-                createMenu(d.access_token);
+        res.on('data', function(data) {
+            console.log("request d:"+data);
+            console.log("request expired:"+data.expires_in);
+            if(data.access_token){
+                createMenu(data.access_token);
             }
         });
     });
