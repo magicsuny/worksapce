@@ -58,15 +58,19 @@ function requestAccessToken(){
         hostname: 'api.weixin.qq.com',
         port: 443,
         path: '/cgi-bin/token?grant_type=client_credential&appid='+APP_ID+'&secret='+APP_SECRET,
+        headers: {
+            "Content-Type": 'application/json'
+        },
         method: 'GET'
     };
 
     var req = https.request(options, function(res) {
 
         res.on('data', function(data) {
-            console.log("request d:"+data);
+
             console.log("request expired:"+data.expires_in);
             console.log("request expired:"+data.access_token);
+
             if(data.access_token){
                 createMenu(data.access_token);
             }
