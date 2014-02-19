@@ -10,7 +10,7 @@ exports.index = function(req,res){
     if(query){
         var echostr = checkSignature(query);
         if(echostr){
-            console.log(req.post);
+            console.log("checkSignature req.post:"+req.post);
             requestAccessToken();
             console.log(req.method);
             if(req.method=='GET'){
