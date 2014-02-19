@@ -9,6 +9,7 @@ exports.index = function(req,res){
     console.log(query);
     if(query){
         var echostr = checkSignature(query);
+        console.log("echostr:"+echostr);
         if(echostr){
             console.log("checkSignature req.post:"+req.post);
             requestAccessToken();
@@ -66,7 +67,7 @@ function requestAccessToken(){
 
         res.on('data', function(d) {
             if(d.access_token){
-                createMenu(res,d.access_token);
+                createMenu(d.access_token);
             }
         });
     });
@@ -78,8 +79,23 @@ function requestAccessToken(){
 }
 
 
-function createMenu(req,accessToken){
+function createMenu(accessToken){
+    var options = {
+        hostname: 'api.weixin.qq.com',
+        port: 443,
+        path: '/cgi-bin/menu/create?access_token='+accessToken,
+        method: 'POST'
+    };
+    var req = https.request(options, function(res) {
+        console.log("statusCode: ", res.statusCode);
+        console.log("headers: ", res.headers);
 
+        res.on('data', function(d) {
+            if(d.access_token){
+
+            }
+        });
+    });
     req.write({
         "button":[
             {
