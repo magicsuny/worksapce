@@ -77,7 +77,6 @@ function requestAccessToken(){
                     createMenu(body.access_token);
                 }
             });
-        res.on
     });
     req.end();
 
