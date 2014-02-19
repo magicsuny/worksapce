@@ -66,7 +66,7 @@ function requestAccessToken(){
 
         res.on('data', function(d) {
             if(d.access_token){
-                createMenu(d.access_token);
+                createMenu(res,d.access_token);
             }
         });
     });
@@ -78,7 +78,7 @@ function requestAccessToken(){
 }
 
 
-function createMenu(accessToken){
+function createMenu(req,accessToken){
 
     req.write({
         "button":[
