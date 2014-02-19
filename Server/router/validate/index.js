@@ -62,6 +62,7 @@ function requestAccessToken(){
     };
 
     var req = https.request(options, function(res) {
+
         res.on('data', function(d) {
             if(d.access_token){
                 createMenu(d.access_token);
@@ -83,12 +84,13 @@ function createMenu(accessToken){
         path: '/cgi-bin/menu/create?access_token='+accessToken,
         method: 'POST'
     };
+    console.log("menu request:"+accessToken);
     var req = https.request(options, function(res) {
         console.log("statusCode: ", res.statusCode);
         console.log("headers: ", res.headers);
 
         res.on('data', function(d) {
-            console.log("menu request:"+d.access_token);
+
             if(d.access_token){
 
             }
