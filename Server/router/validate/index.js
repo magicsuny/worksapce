@@ -58,9 +58,6 @@ function requestAccessToken(){
         hostname: 'api.weixin.qq.com',
         port: 443,
         path: '/cgi-bin/token?grant_type=client_credential&appid='+APP_ID+'&secret='+APP_SECRET,
-        headers: {
-            "Content-Type": 'application/json'
-        },
         method: 'GET'
     };
 
@@ -68,11 +65,10 @@ function requestAccessToken(){
         var body = "";
         res.on('data', function(data) {
             body+=data;
-
         }).on('end',function(){
+                body = JSON.parse(body);
                 console.log("request expired:"+body.expires_in);
                 console.log("request expired:"+body.access_token);
-
                 if(body.access_token){
                     createMenu(body.access_token);
                 }
@@ -93,7 +89,7 @@ function createMenu(accessToken){
         path: '/cgi-bin/menu/create?access_token='+accessToken,
         method: 'POST'
     };
-    console.log("menu request:"+accessToken);
+    console.log("menu request options:"+options);
     var req = https.request(options, function(res) {
         console.log("statusCode: ", res.statusCode);
         console.log("headers: ", res.headers);
