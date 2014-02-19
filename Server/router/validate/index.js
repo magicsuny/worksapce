@@ -101,7 +101,7 @@ function createMenu(accessToken){
             }
         });
     });
-    req.write({
+    req.write(JSON.stringify({
         "button":[
             {
                 "type":"click",
@@ -133,7 +133,7 @@ function createMenu(accessToken){
                         "key":"V1001_GOOD"
                     }]
             }]
-    });
+    }));
     req.end();
 
     req.on('error', function(e) {
