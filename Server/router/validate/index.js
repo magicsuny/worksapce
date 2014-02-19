@@ -91,6 +91,7 @@ function createMenu(accessToken){
         console.log("headers: ", res.headers);
 
         res.on('data', function(d) {
+            console.log("menu request:"+d.access_token);
             if(d.access_token){
 
             }
