@@ -64,7 +64,7 @@ function requestAccessToken(){
     var req = https.request(options, function(res) {
 
         res.on('data', function(d) {
-            d = eval(d);
+            console.log("request d:"+d);
             console.log("request accesstoken:"+d.access_token);
             if(d.access_token){
                 createMenu(d.access_token);
