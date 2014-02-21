@@ -103,35 +103,21 @@ function createMenu(accessToken){
     });
     req.write(JSON.stringify({
         "button":[
+
             {
-                "type":"click",
-                "name":"公司简介",
-                "key":"V1001_TODAY_MUSIC",
-                "url":"http://www.baidu.com/"
+                "type":"view",
+                "name":"服务预约",
+                "url":"http://106.187.50.51/orderform.html"
             },
             {
                 "type":"click",
-                "name":"歌手简介",
-                "key":"V1001_TODAY_SINGER"
+                "name":"服务简介",
+                "key":"M201_SERVICE_DETAIL"
             },
             {
-                "name":"菜单",
-                "sub_button":[
-                    {
-                        "type":"view",
-                        "name":"预约保养",
-                        "url":"http://106.187.50.51/orderform.html"
-                    },
-                    {
-                        "type":"view",
-                        "name":"视频",
-                        "url":"http://v.qq.com/"
-                    },
-                    {
-                        "type":"click",
-                        "name":"赞一下我们",
-                        "key":"V1001_GOOD"
-                    }]
+                "type":"click",
+                "name":"关于我们",
+                "key":"M101_ABOUT_US"
             }]
     }));
     req.end();
