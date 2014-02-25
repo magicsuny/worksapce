@@ -26,8 +26,25 @@ function onRequest(req,res){
 
 
 exports.start = function(){
-    var server = http.createServer(onRequest).listen(config.LISTEN_PORT,function(){
-        logger.info('server is running!');
-    });
-    return server;
+
+    if (cluster.isMaster) {
+
+        var cpuCount = require('os').cpus().length;
+
+        for (var i = 0; i < cpuCount; i++) {
+            cluster.fork();
+        }
+
+        cluster.on('exit', function (worker) {
+            console.log('Worker ' + worker.id + ' died!!!!');
+            cluster.fork();
+        });
+
+    } else {
+        var server = http.createServer(onRequest).listen(config.LISTEN_PORT,function(){
+            logger.info('server is running!');
+        });
+        return server;
+        console.log('Worker ' + cluster.worker.id + ' runing!');
+    }
 }
