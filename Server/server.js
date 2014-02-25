@@ -7,7 +7,8 @@ var http = require('http'),
     router = require('./router'),
     querystring = require('querystring'),
     config = require('./app').getConfig(),
-    logger = require('./app').getLogger('sys');
+    logger = require('./app').getLogger('sys'),
+    cluster = require('cluster');
 
 function onRequest(req,res){
     var _getData = '';
