@@ -4,7 +4,8 @@
 
 
 var log4js = require('log4js'),
-    config = require('./config');
+    config = require('./config'),
+    service = require("./service/synCarlist");
 /**
  * 获取日志logger
  * @param name
@@ -35,4 +36,5 @@ log4js.configure({
     }],
     replaceConsole:true
 });
+service.doJob();
 exports.server = server.start();

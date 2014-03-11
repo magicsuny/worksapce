@@ -1,5 +1,5 @@
 {
-    "name": "TimePill-Server",
+    "name": "Fix",
     "version": "0.0.1",
     "private": true,
     "scripts": {
@@ -11,6 +11,10 @@
         "underscore":"*",
         "protobufjs":"*",
         "mysql":"*",
+        "mysql-queues":"*",
+        "later":"*",
+        "iconv-lite":"*",
+        "bufferhelper":"*",
         "log4js":"0.5.7"
     }
 }
