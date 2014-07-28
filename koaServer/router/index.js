@@ -16,7 +16,7 @@ module.exports = function(app,db){
 
   app.use(router.post('/getCarModel',carInfoHandler.getCarModel));
 
-  app.use(router.get('/wxrouter',wxHandler.index));
+  app.use(router.get('/validate',wxHandler.index));
 
   app.use(router.get('/todos', function *() {
     this.body = JSON.stringify(todos);
