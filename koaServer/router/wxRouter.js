@@ -10,6 +10,8 @@ var APP_ID='wxf72e9f4c5958f96d',
 function WXHandler(db) {
 
   this.index = function *(){
+
+    var data='';
     var query = url.parse(this.req.url,true).query;
     console.log(query);
     if(query){
@@ -19,8 +21,15 @@ function WXHandler(db) {
         if(this.req.method=='GET'){
           this.body = echostr;
         }else{
-          var postQuery = yield parse(this);
-          processMessage(postQuery,this.body);
+
+          this.req.on('data',function(chunk){
+            data+=chunk;
+          });
+          this.req.on('end',function(){
+
+            processMessage(data,this.body);
+          });
+
         }
 
       }else{
@@ -220,7 +229,7 @@ function WXHandler(db) {
           msg="你发的图片是："+PicUrl;
         }
         this.type = 'text/xml; charset=utf-8';
-        this.body=yield('<xml><ToUserName><![CDATA['+FromUserName+']]></ToUserName><FromUserName><![CDATA['+ToUserName+']]></FromUserName><CreateTime>'+CreateTime+'</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA['+msg+']]></Content></xml>');
+        this.body='<xml><ToUserName><![CDATA['+FromUserName+']]></ToUserName><FromUserName><![CDATA['+ToUserName+']]></FromUserName><CreateTime>'+CreateTime+'</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA['+msg+']]></Content></xml>';
 
       });
     });
