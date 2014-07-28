@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "bluebird": ">=1.0.1",
+    "bufferhelper": "^0.2.0",
+    "co-body": ">=0.0.1",
+    "co-views": ">=0.2.0",
+    "iconv-lite": "^0.4.4",
+    "koa": ">=0.3.0",
+    "koa-logger": "^1.2.2",
+    "koa-route": ">=1.0.2",
+    "koa-static": ">=1.4.2",
+    "later": "^1.1.6",
+    "mongodb": "^1.4.7"
+  }
+}

@@ -44,7 +44,7 @@ function importToDB(db, data) {
   for (var loop = 0; loop < tmp_brands.length; loop += 2) {
     var brandId = tmp_brands[loop];
     var carBrand = {};
-    carBrand['id'] = brandId;
+    carBrand['id'] = parseInt(brandId);
     carBrand['name'] = tmp_brands[loop + 1];
     carBrands[brandId] = carBrand
     carBrands_c.insert(carBrand,function(err,result){
@@ -59,9 +59,9 @@ function importToDB(db, data) {
     var sub_brands = br[sub_brand_index].split(',');
     for (var loop = 0; loop < sub_brands.length; loop += 2) {
       var carSubBrand = {};
-      carSubBrand['id'] = sub_brands[loop];
+      carSubBrand['id'] = parseInt(sub_brands[loop]);
       carSubBrand['name'] = sub_brands[loop + 1];
-      carSubBrand['brandId'] = sub_brand_index;
+      carSubBrand['brandId'] = parseInt(sub_brand_index);
       carSubBrands[sub_brands[loop]] = carSubBrand;
       carSubBrands_c.insert(carSubBrand,function(err,result){
 
@@ -86,7 +86,7 @@ function importToDB(db, data) {
     for (var loop = 0; loop < spl_array.length; loop += 2) {
       var splId = spl_array[loop];
       var sp = {};
-      sp['id'] = splId;
+      sp['id'] = parseInt(splId);
       sp['name'] = spl_array[loop + 1];
       var subBrand = carSubBrands[spec_year_tmp_array[spl_index]];
       sp['sub_brand'] = subBrand;
