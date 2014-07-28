@@ -1,6 +1,6 @@
 var crypto=require("crypto"),
     https = require('https'),
-    xml=require("../../node_modules/node-xml/lib/node-xml.js");
+    xml=require("../node_modules/node-xml/lib/node-xml.js");
 var APP_ID='wxf72e9f4c5958f96d',
     APP_SECRET='bcdac03ae24bd1f04a462b2baf20cc04',
     TOKEN='magic';
