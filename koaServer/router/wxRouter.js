@@ -11,7 +11,6 @@ function WXHandler(db) {
 
   this.index = function *(){
 
-    var data='';
     var query = url.parse(this.req.url,true).query;
     console.log(query);
     if(query){
@@ -22,14 +21,9 @@ function WXHandler(db) {
           this.body = echostr;
         }else{
 
-          this.req.on('data',function(chunk){
-            data+=chunk;
-          });
-          this.req.on('end',function(){
 
-            processMessage(data,this.body);
-          });
-
+          this.type = 'text/xml; charset=utf-8';
+          this.body = yield processMessage();
         }
 
       }else{
@@ -152,7 +146,8 @@ function WXHandler(db) {
     });
   }
 
-  function processMessage(data,body){
+  function processMessage(){
+    var data = '';
     var ToUserName="";
     var FromUserName="";
     var CreateTime="";
@@ -166,74 +161,85 @@ function WXHandler(db) {
     var FuncFlag="";
 
     var tempName="";
-    var parse=new xml.SaxParser(function(cb){
-      cb.onStartElementNS(function(elem,attra,prefix,uri,namespaces){
-        tempName=elem;
+
+
+    return function(callback) {
+
+      this.req.on('data', function (chunk) {
+        data += chunk;
       });
+      this.req.on('end', function () {
+        var parse=new xml.SaxParser(function(cb){
+          cb.onStartElementNS(function(elem,attra,prefix,uri,namespaces){
+            tempName=elem;
+          });
 
-      cb.onCharacters(function(chars){
-        chars=chars.replace(/(^\s*)|(\s*$)/g, "");
-        if(tempName=="CreateTime"){
-          CreateTime=chars;
-        }else if(tempName=="Location_X"){
-          Location_X=chars;
-        }else if(tempName=="Location_Y"){
-          Location_Y=chars;
-        }else if(tempName=="Scale"){
-          Scale=chars;
-        }
-        console.log(chars);
+          cb.onCharacters(function(chars){
+            chars=chars.replace(/(^\s*)|(\s*$)/g, "");
+            if(tempName=="CreateTime"){
+              CreateTime=chars;
+            }else if(tempName=="Location_X"){
+              Location_X=chars;
+            }else if(tempName=="Location_Y"){
+              Location_Y=chars;
+            }else if(tempName=="Scale"){
+              Scale=chars;
+            }
+            console.log(chars);
+
+          });
+
+          cb.onCdata(function(cdata){
+
+            if(tempName=="ToUserName"){
+              ToUserName=cdata;
+            }else if(tempName=="FromUserName"){
+              FromUserName=cdata;
+            }else if(tempName=="MsgType"){
+              MsgType=cdata;
+            }else if(tempName=="Content"){
+              Content=cdata;
+            }else if(tempName=="PicUrl"){
+              PicUrl=cdata;
+            }else if(tempName=="Label"){
+              Label=cdata;
+            }
+            console.log("cdata:"+cdata);
+          });
+
+          cb.onEndElementNS(function(elem,prefix,uri){
+            tempName="";
+          });
+
+          cb.onEndDocument(function(){
+            console.log("onEndDocument");
+            tempName="";
+            var date=new Date();
+            var yy=date.getYear();
+            var MM=date.getMonth() + 1;
+            var dd=date.getDay();
+            var hh=date.getHours();
+            var mm=date.getMinutes();
+            var ss=date.getSeconds();
+            var sss=date.getMilliseconds();
+            var result=Date.UTC(yy,MM,dd,hh,mm,ss,sss);
+            var msg="";
+            if(MsgType=="text"){
+              msg="谢谢关注,你说的是："+Content;
+            }else if (MsgType="location"){
+              msg="你所在的位置: 经度："+Location_X+"纬度："+Location_Y;
+            }else if (MsgType="image"){
+              msg="你发的图片是："+PicUrl;
+            }
+
+            callback(null,'<xml><ToUserName><![CDATA['+FromUserName+']]></ToUserName><FromUserName><![CDATA['+ToUserName+']]></FromUserName><CreateTime>'+CreateTime+'</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA['+msg+']]></Content></xml>');
+
+          });
+        });
+        parse.parseString(data);
 
       });
-
-      cb.onCdata(function(cdata){
-
-        if(tempName=="ToUserName"){
-          ToUserName=cdata;
-        }else if(tempName=="FromUserName"){
-          FromUserName=cdata;
-        }else if(tempName=="MsgType"){
-          MsgType=cdata;
-        }else if(tempName=="Content"){
-          Content=cdata;
-        }else if(tempName=="PicUrl"){
-          PicUrl=cdata;
-        }else if(tempName=="Label"){
-          Label=cdata;
-        }
-        console.log("cdata:"+cdata);
-      });
-
-      cb.onEndElementNS(function(elem,prefix,uri){
-        tempName="";
-      });
-
-      cb.onEndDocument(function(){
-        console.log("onEndDocument");
-        tempName="";
-        var date=new Date();
-        var yy=date.getYear();
-        var MM=date.getMonth() + 1;
-        var dd=date.getDay();
-        var hh=date.getHours();
-        var mm=date.getMinutes();
-        var ss=date.getSeconds();
-        var sss=date.getMilliseconds();
-        var result=Date.UTC(yy,MM,dd,hh,mm,ss,sss);
-        var msg="";
-        if(MsgType=="text"){
-          msg="谢谢关注,你说的是："+Content;
-        }else if (MsgType="location"){
-          msg="你所在的位置: 经度："+Location_X+"纬度："+Location_Y;
-        }else if (MsgType="image"){
-          msg="你发的图片是："+PicUrl;
-        }
-        this.type = 'text/xml; charset=utf-8';
-        this.body='<xml><ToUserName><![CDATA['+FromUserName+']]></ToUserName><FromUserName><![CDATA['+ToUserName+']]></FromUserName><CreateTime>'+CreateTime+'</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA['+msg+']]></Content></xml>';
-
-      });
-    });
-    parse.parseString(data);
+    }
   }
 }
 
