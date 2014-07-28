@@ -4,15 +4,19 @@
 var router       = require('koa-route');
 var OrderHandler = require('./order');
 var CarInfoHandler = require('./carInfo');
+var WXHandler = require('./wxRouter');
 module.exports = function(app,db){
   var orderHandler = new OrderHandler(db);
   var carInfoHandler = new CarInfoHandler(db);
+  var wxHandler = new WXHandler(db);
 
   app.use(router.get('/neworder', orderHandler.newOrder));
 
   app.use(router.post('/getCarSubBrands',carInfoHandler.getSubCarBrand));
 
   app.use(router.post('/getCarModel',carInfoHandler.getCarModel));
+
+  app.use(router.post('/wxrouter',wxHandler.index));
 
   app.use(router.get('/todos', function *() {
     this.body = JSON.stringify(todos);
