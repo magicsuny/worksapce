@@ -12,6 +12,7 @@ function WXHandler(db) {
   this.index = function *(){
 
     var query = url.parse(this.req.url,true).query;
+    //
     console.log(query);
     if(query){
       var echostr = checkSignature(query);
@@ -21,9 +22,9 @@ function WXHandler(db) {
           this.body = echostr;
         }else{
 
-
+          var postQuery = yield parse.other(this);
           this.type = 'text/xml; charset=utf-8';
-          this.body = yield processMessage();
+          this.body = yield processMessage(postQuery);
         }
 
       }else{
@@ -146,8 +147,7 @@ function WXHandler(db) {
     });
   }
 
-  function processMessage(){
-    var data = '';
+  function processMessage(data){
     var ToUserName="";
     var FromUserName="";
     var CreateTime="";
@@ -165,10 +165,7 @@ function WXHandler(db) {
 
     return function(callback) {
 
-      this.req.on('data', function (chunk) {
-        data += chunk;
-      });
-      this.req.on('end', function () {
+
         var parse=new xml.SaxParser(function(cb){
           cb.onStartElementNS(function(elem,attra,prefix,uri,namespaces){
             tempName=elem;
@@ -237,8 +234,6 @@ function WXHandler(db) {
           });
         });
         parse.parseString(data);
-
-      });
     }
   }
 }
