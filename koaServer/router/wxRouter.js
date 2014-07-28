@@ -1,6 +1,7 @@
 var crypto=require("crypto"),
     https = require('https'),
     url = require('url'),
+   parse = require('co-body'),
     xml=require("../node_modules/node-xml/lib/node-xml.js");
 var APP_ID='wxf72e9f4c5958f96d',
     APP_SECRET='bcdac03ae24bd1f04a462b2baf20cc04',
@@ -18,8 +19,8 @@ function WXHandler(db) {
         if(this.req.method=='GET'){
           this.body = echostr;
         }else{
-          var postQuery =
-          processMessage(query,this.body);
+          var postQuery = yield parse(this);
+          processMessage(postQuery,this.body);
         }
 
       }else{
@@ -93,7 +94,8 @@ function WXHandler(db) {
       path: '/cgi-bin/menu/create?access_token='+accessToken,
       method: 'POST'
     };
-    console.log("menu request options:"+options);
+    console.log("menu request options:");
+    console.log(options);
     var req = https.request(options, function(res) {
       console.log("statusCode: ", res.statusCode);
       console.log("headers: ", res.headers);
