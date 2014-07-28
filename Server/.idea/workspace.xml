@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="533a2d2c-b44e-48bd-ac81-2e4fab54d597" name="Default" comment="update">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../koaServer/router/index.js" afterPath="$PROJECT_DIR$/../koaServer/router/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../koaServer/package.json" afterPath="$PROJECT_DIR$/../koaServer/package.json" />
-    </list>
+    <list default="true" id="533a2d2c-b44e-48bd-ac81-2e4fab54d597" name="Default" comment="update" />
     <ignored path="Server.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
