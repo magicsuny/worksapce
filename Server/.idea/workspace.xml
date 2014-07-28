@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="533a2d2c-b44e-48bd-ac81-2e4fab54d597" name="Default" comment="update">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../koaServer/router/index.js" afterPath="$PROJECT_DIR$/../koaServer/router/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../koaServer/router/wxRouter.js" afterPath="$PROJECT_DIR$/../koaServer/router/wxRouter.js" />
     </list>
     <ignored path="Server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -2262,7 +2262,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32940108" sideWeight="0.49973643" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849604" sideWeight="0.4985694" order="11" side_tool="false" content_ui="tabs" />
