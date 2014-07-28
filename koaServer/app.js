@@ -18,7 +18,7 @@ app.use(logger());
 //
 app.use(staticServer(path.join(__dirname, 'public')));
 mongoClient.connect('mongodb://127.0.0.1:27017/car', function (err, db) {
-  //initDbService.doJob(db);
+  initDbService.doJob(db);
   router(app,db);
   app.listen(80);
   console.log('Listening on 80');
