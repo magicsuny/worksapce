@@ -18,6 +18,7 @@ function WXHandler(db) {
         if(this.req.method=='GET'){
           this.body = echostr;
         }else{
+          var postQuery =
           processMessage(query,this.body);
         }
 
