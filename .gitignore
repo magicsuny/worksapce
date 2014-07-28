@@ -2,5 +2,5 @@
 /*/.idea/*
 /bak
 /*/node_modules/
-!/koaServer/node_module/co-body/*
+!/koaServer/node_module/co-body/lib/*
 
