@@ -1,6 +1,7 @@
 var crypto=require("crypto"),
     https = require('https'),
     parse = require('co-body'),
+    url = require('url'),
     xml=require("../node_modules/node-xml/lib/node-xml.js");
 var APP_ID='wxf72e9f4c5958f96d',
     APP_SECRET='bcdac03ae24bd1f04a462b2baf20cc04',
@@ -9,7 +10,7 @@ var APP_ID='wxf72e9f4c5958f96d',
 function WXHandler(db) {
 
   this.index = function *(){
-    var query = yield parse(this);
+    var query = url.parse(this.req.url,true).query;
     console.log(query);
     if(query){
       var echostr = checkSignature(query);
@@ -217,7 +218,7 @@ function WXHandler(db) {
           msg="你发的图片是："+PicUrl;
         }
         this.type = 'text/xml; charset=utf-8';
-        this.body='<xml><ToUserName><![CDATA['+FromUserName+']]></ToUserName><FromUserName><![CDATA['+ToUserName+']]></FromUserName><CreateTime>'+CreateTime+'</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA['+msg+']]></Content></xml>';
+        this.body=yield('<xml><ToUserName><![CDATA['+FromUserName+']]></ToUserName><FromUserName><![CDATA['+ToUserName+']]></FromUserName><CreateTime>'+CreateTime+'</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA['+msg+']]></Content></xml>');
 
       });
     });

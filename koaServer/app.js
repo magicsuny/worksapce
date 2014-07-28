@@ -3,7 +3,6 @@ var koa = require('koa');
 var staticServer = require('koa-static');
 
 //this allows us to parse the native req object to get the body
-var parse = require('co-body');
 
 var router = require('./router');
 var logger = require('koa-logger');
@@ -21,11 +20,13 @@ app.use(logger());
 //
 app.use(staticServer(path.join(__dirname, 'public')));
 
-
 mongoClient.connect('mongodb://127.0.0.1:27017/car', function (err, db) {
-  initDbService.doJob(db);
+  //initDbService.doJob(db);
+
   router(app,db);
-  app.listen(80);
-  console.log('Listening on 3000');
+
+
+  app.listen(8080);
+  console.log('Listening on 80');
 });
 
