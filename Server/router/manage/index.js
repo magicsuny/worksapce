@@ -7,7 +7,7 @@ var fs = require('fs'),
 
 exports.index = function(req,res){
     res.writeHead(200, { 'Content-type': 'text/html'});
-    res.end(fs.readFileSync(__dirname + '/index.html'));
+    res.end(fs.readFileSync(__dirname + '/../../template/html/manage.html'));
     socketio.sockets.on('connection',function(socket){
         readLog(socket);
     });

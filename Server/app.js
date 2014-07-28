@@ -5,7 +5,8 @@
 
 var log4js = require('log4js'),
     config = require('./config'),
-    service = require("./service/synCarlist");
+    MongoClient = require('mongodb').MongoClient,
+    service = require("./service/synCarListMongo");
 /**
  * 获取日志logger
  * @param name
@@ -24,7 +25,6 @@ exports.getLogger = function(name){
 exports.getConfig = function(){
     return config;
 }
-var server = require('./server');
 
 //日志配置
 log4js.configure({
@@ -36,5 +36,8 @@ log4js.configure({
     }],
     replaceConsole:true
 });
-service.doJob();
-exports.server = server.start();
+MongoClient.connect('mongodb://localhost:27017/car', function(err, db) {
+  var server = require('./server');
+  service.doJob(db);
+  exports.server = server.start();
+});

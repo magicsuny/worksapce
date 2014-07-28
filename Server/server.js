@@ -26,9 +26,9 @@ function onRequest(req,res){
 }
 
 
-exports.start = function(){
+exports.start = function(db){
 
-    if (cluster.isMaster) {
+    if (cluster.isMaster&&false) {
 
         var cpuCount = require('os').cpus().length;
 

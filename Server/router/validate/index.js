@@ -116,8 +116,18 @@ function createMenu(accessToken){
             },
             {
                 "type":"click",
-                "name":"关于我们",
-                "key":"M101_ABOUT_US"
+                "name":"我",
+                "sub_button":[
+                    {
+                        "type":"view",
+                        "name":"服务记录",
+                        "url":"http://v.qq.com/"
+                    },
+                    {
+                        "type":"click",
+                        "name":"",
+                        "key":"V1001_GOOD"
+                    }]
             }]
     }));
     req.end();

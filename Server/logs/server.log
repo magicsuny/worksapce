@@ -316,3 +316,556 @@ Error: Cannot wrap null or non-object
 [2014-01-02 20:29:59.950] [DEBUG] router - 无法找到 ./模块
 [2014-01-02 20:29:59.952] [DEBUG] router - 无法找到 ./模块
 [2014-01-02 20:29:59.952] [INFO] router - 找不到路径
+[2014-02-18 12:18:03.373] [INFO] sys - server is running!
+[2014-02-18 12:18:30.680] [INFO] sys - server is running!
+[2014-02-18 12:20:34.795] [DEBUG] router - 无法找到 ./order.html路径
+[2014-02-18 12:25:10.270] [INFO] sys - server is running!
+[2014-02-18 13:05:43.107] [INFO] sys - server is running!
+[2014-02-18 13:06:31.584] [INFO] sys - server is running!
+[2014-02-18 13:08:43.596] [INFO] sys - server is running!
+[2014-02-18 13:17:30.615] [INFO] sys - server is running!
+[2014-02-18 13:17:36.503] [DEBUG] router - 无法找到 ./order.html路径
+[2014-02-18 13:17:57.569] [INFO] sys - server is running!
+[2014-02-18 13:18:22.152] [DEBUG] router - 无法找到 ./order.html路径
+[2014-02-18 13:18:43.525] [INFO] sys - server is running!
+[2014-02-18 13:18:48.917] [DEBUG] router - 无法找到 ./order.html路径
+[2014-02-18 13:19:06.351] [INFO] sys - server is running!
+[2014-02-18 13:20:39.500] [DEBUG] router - 无法找到 ./order.html路径
+[2014-02-18 13:20:40.198] [INFO] sys - server is running!
+[2014-02-18 13:20:49.683] [DEBUG] router - 无法找到 ./order.html路径
+[2014-02-18 13:22:31.619] [INFO] sys - server is running!
+[2014-02-18 13:22:39.720] [DEBUG] router - 无法找到 ./order.html路径
+[2014-02-18 13:23:20.791] [INFO] sys - server is running!
+[2014-02-18 13:23:28.276] [DEBUG] router - 无法找到 ./order.html路径
+[2014-02-18 13:23:28.277] [INFO] router - 找不到路径
+[2014-02-18 13:23:28.281] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 13:23:28.281] [INFO] router - 找不到路径
+[2014-02-18 13:23:28.283] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 13:23:28.283] [INFO] router - 找不到路径
+[2014-02-18 13:23:29.287] [INFO] router - 找不到路径
+[2014-02-18 13:23:36.031] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 13:23:36.031] [INFO] router - 找不到路径
+[2014-02-18 13:23:36.033] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 13:23:36.033] [INFO] router - 找不到路径
+[2014-02-18 13:23:36.035] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 13:23:36.035] [INFO] router - 找不到路径
+[2014-02-18 13:23:37.042] [INFO] router - 找不到路径
+[2014-02-18 13:24:22.783] [INFO] sys - server is running!
+[2014-02-18 13:24:28.148] [INFO] sys - server is running!
+[2014-02-18 13:24:36.484] [DEBUG] router - 无法找到 ./order.html路径
+[2014-02-18 13:24:36.485] [INFO] router - 找不到路径
+[2014-02-18 13:24:36.489] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 13:24:36.489] [INFO] router - 找不到路径
+[2014-02-18 13:24:36.500] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 13:24:36.500] [INFO] router - 找不到路径
+[2014-02-18 13:24:36.500] [INFO] router - 找不到路径
+[2014-02-18 13:33:32.702] [DEBUG] router - 无法找到 ./section_to_load.html路径
+[2014-02-18 13:33:32.702] [INFO] router - 找不到路径
+[2014-02-18 13:33:32.704] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 13:33:32.704] [INFO] router - 找不到路径
+[2014-02-18 13:33:32.706] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 13:33:32.706] [INFO] router - 找不到路径
+[2014-02-18 13:33:32.706] [INFO] router - 找不到路径
+[2014-02-18 13:39:13.118] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 13:39:13.118] [INFO] router - 找不到路径
+[2014-02-18 13:39:13.120] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 13:39:13.121] [INFO] router - 找不到路径
+[2014-02-18 13:39:13.123] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 13:39:13.123] [INFO] router - 找不到路径
+[2014-02-18 13:39:13.123] [INFO] router - 找不到路径
+[2014-02-18 13:39:34.558] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 13:39:34.558] [INFO] router - 找不到路径
+[2014-02-18 13:39:34.560] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 13:39:34.560] [INFO] router - 找不到路径
+[2014-02-18 13:39:34.561] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 13:39:34.561] [INFO] router - 找不到路径
+[2014-02-18 13:39:34.561] [INFO] router - 找不到路径
+[2014-02-18 13:45:53.414] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 13:45:53.415] [INFO] router - 找不到路径
+[2014-02-18 13:45:53.416] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 13:45:53.417] [INFO] router - 找不到路径
+[2014-02-18 13:45:53.418] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 13:45:53.419] [INFO] router - 找不到路径
+[2014-02-18 13:45:53.419] [INFO] router - 找不到路径
+[2014-02-18 13:46:07.923] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 13:46:07.924] [INFO] router - 找不到路径
+[2014-02-18 13:46:07.925] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 13:46:07.925] [INFO] router - 找不到路径
+[2014-02-18 13:46:07.927] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 13:46:07.927] [INFO] router - 找不到路径
+[2014-02-18 13:46:07.927] [INFO] router - 找不到路径
+[2014-02-18 13:49:14.112] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 13:49:14.113] [INFO] router - 找不到路径
+[2014-02-18 13:49:14.115] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 13:49:14.115] [INFO] router - 找不到路径
+[2014-02-18 13:49:14.116] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 13:49:14.116] [INFO] router - 找不到路径
+[2014-02-18 13:49:14.116] [INFO] router - 找不到路径
+[2014-02-18 13:52:40.191] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 13:52:40.191] [INFO] router - 找不到路径
+[2014-02-18 13:52:40.193] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 13:52:40.193] [INFO] router - 找不到路径
+[2014-02-18 13:52:40.195] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 13:52:40.195] [INFO] router - 找不到路径
+[2014-02-18 13:52:40.196] [INFO] router - 找不到路径
+[2014-02-18 13:52:46.054] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 13:52:46.054] [INFO] router - 找不到路径
+[2014-02-18 13:52:46.056] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 13:52:46.056] [INFO] router - 找不到路径
+[2014-02-18 13:52:46.058] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 13:52:46.058] [INFO] router - 找不到路径
+[2014-02-18 13:52:46.058] [INFO] router - 找不到路径
+[2014-02-18 14:02:57.700] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 14:02:57.700] [INFO] router - 找不到路径
+[2014-02-18 14:02:57.704] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:02:57.704] [INFO] router - 找不到路径
+[2014-02-18 14:02:57.707] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:02:57.707] [INFO] router - 找不到路径
+[2014-02-18 14:02:57.707] [INFO] router - 找不到路径
+[2014-02-18 14:04:41.633] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 14:04:41.633] [INFO] router - 找不到路径
+[2014-02-18 14:04:41.635] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:04:41.635] [INFO] router - 找不到路径
+[2014-02-18 14:04:41.637] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:04:41.637] [INFO] router - 找不到路径
+[2014-02-18 14:04:41.637] [INFO] router - 找不到路径
+[2014-02-18 14:06:12.903] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 14:06:12.904] [INFO] router - 找不到路径
+[2014-02-18 14:06:12.906] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:06:12.906] [INFO] router - 找不到路径
+[2014-02-18 14:06:12.908] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:06:12.908] [INFO] router - 找不到路径
+[2014-02-18 14:06:12.909] [INFO] router - 找不到路径
+[2014-02-18 14:13:46.121] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 14:13:46.121] [INFO] router - 找不到路径
+[2014-02-18 14:13:46.124] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:13:46.124] [INFO] router - 找不到路径
+[2014-02-18 14:13:46.126] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:13:46.126] [INFO] router - 找不到路径
+[2014-02-18 14:13:46.126] [INFO] router - 找不到路径
+[2014-02-18 14:13:52.001] [DEBUG] router - 无法找到 ./orderform.htm路径
+[2014-02-18 14:13:52.001] [INFO] router - 找不到路径
+[2014-02-18 14:13:52.003] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:13:52.003] [INFO] router - 找不到路径
+[2014-02-18 14:13:52.005] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:13:52.005] [INFO] router - 找不到路径
+[2014-02-18 14:13:52.005] [INFO] router - 找不到路径
+[2014-02-18 14:13:52.195] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 14:13:52.195] [INFO] router - 找不到路径
+[2014-02-18 14:13:52.197] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:13:52.197] [INFO] router - 找不到路径
+[2014-02-18 14:13:52.199] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:13:52.199] [INFO] router - 找不到路径
+[2014-02-18 14:13:52.199] [INFO] router - 找不到路径
+[2014-02-18 14:13:58.009] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 14:13:58.009] [INFO] router - 找不到路径
+[2014-02-18 14:13:58.011] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:13:58.012] [INFO] router - 找不到路径
+[2014-02-18 14:13:58.014] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:13:58.014] [INFO] router - 找不到路径
+[2014-02-18 14:13:58.014] [INFO] router - 找不到路径
+[2014-02-18 14:24:15.052] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 14:24:15.052] [INFO] router - 找不到路径
+[2014-02-18 14:24:15.054] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:24:15.054] [INFO] router - 找不到路径
+[2014-02-18 14:24:15.055] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:24:15.055] [INFO] router - 找不到路径
+[2014-02-18 14:24:15.055] [INFO] router - 找不到路径
+[2014-02-18 14:27:32.496] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 14:27:32.496] [INFO] router - 找不到路径
+[2014-02-18 14:27:32.499] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:27:32.499] [INFO] router - 找不到路径
+[2014-02-18 14:27:32.502] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:27:32.502] [INFO] router - 找不到路径
+[2014-02-18 14:27:32.502] [INFO] router - 找不到路径
+[2014-02-18 14:28:35.041] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 14:28:35.041] [INFO] router - 找不到路径
+[2014-02-18 14:28:35.043] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:28:35.044] [INFO] router - 找不到路径
+[2014-02-18 14:28:35.050] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:28:35.053] [INFO] router - 找不到路径
+[2014-02-18 14:28:35.053] [INFO] router - 找不到路径
+[2014-02-18 14:31:07.589] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 14:31:07.589] [INFO] router - 找不到路径
+[2014-02-18 14:31:07.592] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:31:07.592] [INFO] router - 找不到路径
+[2014-02-18 14:31:07.594] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:31:07.594] [INFO] router - 找不到路径
+[2014-02-18 14:31:07.594] [INFO] router - 找不到路径
+[2014-02-18 14:31:28.512] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 14:31:28.512] [INFO] router - 找不到路径
+[2014-02-18 14:31:28.514] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:31:28.514] [INFO] router - 找不到路径
+[2014-02-18 14:31:28.516] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:31:28.516] [INFO] router - 找不到路径
+[2014-02-18 14:31:28.516] [INFO] router - 找不到路径
+[2014-02-18 14:31:48.982] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 14:31:48.982] [INFO] router - 找不到路径
+[2014-02-18 14:31:48.984] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:31:48.984] [INFO] router - 找不到路径
+[2014-02-18 14:31:48.986] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:31:48.986] [INFO] router - 找不到路径
+[2014-02-18 14:31:48.986] [INFO] router - 找不到路径
+[2014-02-18 14:33:25.788] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 14:33:25.788] [INFO] router - 找不到路径
+[2014-02-18 14:33:25.790] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:33:25.790] [INFO] router - 找不到路径
+[2014-02-18 14:33:25.793] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 14:33:25.793] [INFO] router - 找不到路径
+[2014-02-18 14:33:25.793] [INFO] router - 找不到路径
+[2014-02-18 16:12:59.844] [DEBUG] router - 无法找到 ./main/main-article路径
+[2014-02-18 16:12:59.845] [INFO] router - 找不到路径
+[2014-02-18 16:12:59.845] [DEBUG] router - 无法找到 .//main模块
+[2014-02-18 16:12:59.845] [INFO] router - 找不到路径
+[2014-02-18 16:12:59.848] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:12:59.848] [INFO] router - 找不到路径
+[2014-02-18 16:12:59.848] [INFO] router - 找不到路径
+[2014-02-18 16:13:00.392] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:13:00.393] [INFO] router - 找不到路径
+[2014-02-18 16:13:00.395] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:13:00.395] [INFO] router - 找不到路径
+[2014-02-18 16:13:00.401] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:13:00.401] [INFO] router - 找不到路径
+[2014-02-18 16:13:00.402] [INFO] router - 找不到路径
+[2014-02-18 16:13:11.559] [DEBUG] router - 无法找到 ./main/main-article路径
+[2014-02-18 16:13:11.559] [INFO] router - 找不到路径
+[2014-02-18 16:13:11.560] [DEBUG] router - 无法找到 .//main模块
+[2014-02-18 16:13:11.560] [INFO] router - 找不到路径
+[2014-02-18 16:13:11.565] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:13:11.565] [INFO] router - 找不到路径
+[2014-02-18 16:13:11.565] [INFO] router - 找不到路径
+[2014-02-18 16:13:12.452] [DEBUG] router - 无法找到 ./main/main-article路径
+[2014-02-18 16:13:12.452] [INFO] router - 找不到路径
+[2014-02-18 16:13:12.453] [DEBUG] router - 无法找到 .//main模块
+[2014-02-18 16:13:12.453] [INFO] router - 找不到路径
+[2014-02-18 16:13:12.456] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:13:12.456] [INFO] router - 找不到路径
+[2014-02-18 16:13:12.456] [INFO] router - 找不到路径
+[2014-02-18 16:13:29.854] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:13:29.854] [INFO] router - 找不到路径
+[2014-02-18 16:13:29.856] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:13:29.857] [INFO] router - 找不到路径
+[2014-02-18 16:13:29.859] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:13:29.859] [INFO] router - 找不到路径
+[2014-02-18 16:13:29.859] [INFO] router - 找不到路径
+[2014-02-18 16:20:06.158] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:20:06.158] [INFO] router - 找不到路径
+[2014-02-18 16:20:06.161] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:20:06.161] [INFO] router - 找不到路径
+[2014-02-18 16:20:06.163] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:20:06.163] [INFO] router - 找不到路径
+[2014-02-18 16:20:06.163] [INFO] router - 找不到路径
+[2014-02-18 16:21:25.033] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:21:25.033] [INFO] router - 找不到路径
+[2014-02-18 16:21:25.035] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:21:25.036] [INFO] router - 找不到路径
+[2014-02-18 16:21:25.038] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:21:25.038] [INFO] router - 找不到路径
+[2014-02-18 16:21:25.038] [INFO] router - 找不到路径
+[2014-02-18 16:29:41.128] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:29:41.128] [INFO] router - 找不到路径
+[2014-02-18 16:29:41.135] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:29:41.135] [INFO] router - 找不到路径
+[2014-02-18 16:29:41.137] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:29:41.137] [INFO] router - 找不到路径
+[2014-02-18 16:29:41.137] [INFO] router - 找不到路径
+[2014-02-18 16:29:56.790] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:29:56.790] [INFO] router - 找不到路径
+[2014-02-18 16:29:56.792] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:29:56.792] [INFO] router - 找不到路径
+[2014-02-18 16:29:56.794] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:29:56.794] [INFO] router - 找不到路径
+[2014-02-18 16:29:56.795] [INFO] router - 找不到路径
+[2014-02-18 16:30:04.370] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:30:04.371] [INFO] router - 找不到路径
+[2014-02-18 16:30:04.373] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:30:04.373] [INFO] router - 找不到路径
+[2014-02-18 16:30:04.375] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:30:04.375] [INFO] router - 找不到路径
+[2014-02-18 16:30:04.375] [INFO] router - 找不到路径
+[2014-02-18 16:33:19.043] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:33:19.043] [INFO] router - 找不到路径
+[2014-02-18 16:33:19.045] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:33:19.045] [INFO] router - 找不到路径
+[2014-02-18 16:33:19.047] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:33:19.047] [INFO] router - 找不到路径
+[2014-02-18 16:33:19.048] [INFO] router - 找不到路径
+[2014-02-18 16:33:43.503] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:33:43.503] [INFO] router - 找不到路径
+[2014-02-18 16:33:43.505] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:33:43.505] [INFO] router - 找不到路径
+[2014-02-18 16:33:43.508] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:33:43.508] [INFO] router - 找不到路径
+[2014-02-18 16:33:43.508] [INFO] router - 找不到路径
+[2014-02-18 16:34:04.363] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:34:04.363] [INFO] router - 找不到路径
+[2014-02-18 16:34:04.365] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:34:04.365] [INFO] router - 找不到路径
+[2014-02-18 16:34:04.367] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:34:04.367] [INFO] router - 找不到路径
+[2014-02-18 16:34:04.368] [INFO] router - 找不到路径
+[2014-02-18 16:34:17.408] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:34:17.409] [INFO] router - 找不到路径
+[2014-02-18 16:34:17.411] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:34:17.411] [INFO] router - 找不到路径
+[2014-02-18 16:34:17.413] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:34:17.413] [INFO] router - 找不到路径
+[2014-02-18 16:34:17.413] [INFO] router - 找不到路径
+[2014-02-18 16:35:14.241] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:35:14.241] [INFO] router - 找不到路径
+[2014-02-18 16:35:14.243] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:35:14.243] [INFO] router - 找不到路径
+[2014-02-18 16:35:14.245] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:35:14.245] [INFO] router - 找不到路径
+[2014-02-18 16:35:14.245] [INFO] router - 找不到路径
+[2014-02-18 16:35:30.287] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:35:30.287] [INFO] router - 找不到路径
+[2014-02-18 16:35:30.289] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:35:30.290] [INFO] router - 找不到路径
+[2014-02-18 16:35:30.292] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:35:30.292] [INFO] router - 找不到路径
+[2014-02-18 16:35:30.292] [INFO] router - 找不到路径
+[2014-02-18 16:35:52.531] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:35:52.531] [INFO] router - 找不到路径
+[2014-02-18 16:35:52.534] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:35:52.534] [INFO] router - 找不到路径
+[2014-02-18 16:35:52.536] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:35:52.536] [INFO] router - 找不到路径
+[2014-02-18 16:35:52.537] [INFO] router - 找不到路径
+[2014-02-18 16:37:20.501] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:37:20.501] [INFO] router - 找不到路径
+[2014-02-18 16:37:20.504] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:37:20.504] [INFO] router - 找不到路径
+[2014-02-18 16:37:20.506] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:37:20.506] [INFO] router - 找不到路径
+[2014-02-18 16:37:20.506] [INFO] router - 找不到路径
+[2014-02-18 16:37:43.074] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:37:43.074] [INFO] router - 找不到路径
+[2014-02-18 16:37:43.076] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:37:43.076] [INFO] router - 找不到路径
+[2014-02-18 16:37:43.083] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:37:43.083] [INFO] router - 找不到路径
+[2014-02-18 16:37:43.084] [INFO] router - 找不到路径
+[2014-02-18 16:39:33.831] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:39:33.832] [INFO] router - 找不到路径
+[2014-02-18 16:39:33.833] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:39:33.833] [INFO] router - 找不到路径
+[2014-02-18 16:39:33.835] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:39:33.835] [INFO] router - 找不到路径
+[2014-02-18 16:39:33.835] [INFO] router - 找不到路径
+[2014-02-18 16:40:20.523] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:40:20.523] [INFO] router - 找不到路径
+[2014-02-18 16:40:20.526] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:40:20.526] [INFO] router - 找不到路径
+[2014-02-18 16:40:20.528] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:40:20.528] [INFO] router - 找不到路径
+[2014-02-18 16:40:20.528] [INFO] router - 找不到路径
+[2014-02-18 16:40:39.155] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:40:39.155] [INFO] router - 找不到路径
+[2014-02-18 16:40:39.157] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:40:39.157] [INFO] router - 找不到路径
+[2014-02-18 16:40:39.159] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:40:39.159] [INFO] router - 找不到路径
+[2014-02-18 16:40:39.160] [INFO] router - 找不到路径
+[2014-02-18 16:40:56.345] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:40:56.345] [INFO] router - 找不到路径
+[2014-02-18 16:40:56.347] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:40:56.347] [INFO] router - 找不到路径
+[2014-02-18 16:40:56.349] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:40:56.350] [INFO] router - 找不到路径
+[2014-02-18 16:40:56.350] [INFO] router - 找不到路径
+[2014-02-18 16:41:02.303] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:41:02.303] [INFO] router - 找不到路径
+[2014-02-18 16:41:02.305] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:41:02.305] [INFO] router - 找不到路径
+[2014-02-18 16:41:02.307] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:41:02.307] [INFO] router - 找不到路径
+[2014-02-18 16:41:02.308] [INFO] router - 找不到路径
+[2014-02-18 16:42:29.860] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:42:29.860] [INFO] router - 找不到路径
+[2014-02-18 16:42:29.862] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:42:29.862] [INFO] router - 找不到路径
+[2014-02-18 16:42:29.864] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:42:29.864] [INFO] router - 找不到路径
+[2014-02-18 16:42:29.865] [INFO] router - 找不到路径
+[2014-02-18 16:42:50.039] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:42:50.039] [INFO] router - 找不到路径
+[2014-02-18 16:42:50.042] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:42:50.042] [INFO] router - 找不到路径
+[2014-02-18 16:42:50.044] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:42:50.044] [INFO] router - 找不到路径
+[2014-02-18 16:42:50.044] [INFO] router - 找不到路径
+[2014-02-18 16:43:35.696] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:43:35.696] [INFO] router - 找不到路径
+[2014-02-18 16:43:35.698] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:43:35.698] [INFO] router - 找不到路径
+[2014-02-18 16:43:35.701] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:43:35.701] [INFO] router - 找不到路径
+[2014-02-18 16:43:35.707] [INFO] router - 找不到路径
+[2014-02-18 16:43:58.638] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:43:58.638] [INFO] router - 找不到路径
+[2014-02-18 16:43:58.641] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:43:58.641] [INFO] router - 找不到路径
+[2014-02-18 16:43:58.643] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:43:58.643] [INFO] router - 找不到路径
+[2014-02-18 16:43:58.643] [INFO] router - 找不到路径
+[2014-02-18 16:48:11.667] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:48:11.667] [INFO] router - 找不到路径
+[2014-02-18 16:48:11.670] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:48:11.671] [INFO] router - 找不到路径
+[2014-02-18 16:48:11.673] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:48:11.673] [INFO] router - 找不到路径
+[2014-02-18 16:48:11.674] [INFO] router - 找不到路径
+[2014-02-18 16:48:36.676] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:48:36.677] [INFO] router - 找不到路径
+[2014-02-18 16:48:36.679] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:48:36.679] [INFO] router - 找不到路径
+[2014-02-18 16:48:36.681] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:48:36.681] [INFO] router - 找不到路径
+[2014-02-18 16:48:36.682] [INFO] router - 找不到路径
+[2014-02-18 16:49:02.352] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:49:02.352] [INFO] router - 找不到路径
+[2014-02-18 16:49:02.355] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:49:02.355] [INFO] router - 找不到路径
+[2014-02-18 16:49:02.358] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:49:02.358] [INFO] router - 找不到路径
+[2014-02-18 16:49:02.358] [INFO] router - 找不到路径
+[2014-02-18 16:49:26.844] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-18 16:49:26.844] [INFO] router - 找不到路径
+[2014-02-18 16:49:26.851] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:49:26.851] [INFO] router - 找不到路径
+[2014-02-18 16:49:26.853] [DEBUG] router - 无法找到 ./模块
+[2014-02-18 16:49:26.853] [INFO] router - 找不到路径
+[2014-02-18 16:49:26.853] [INFO] router - 找不到路径
+[2014-02-19 10:15:27.373] [INFO] sys - server is running!
+[2014-02-19 10:15:45.750] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-19 10:15:45.751] [INFO] router - 找不到路径
+[2014-02-19 10:15:45.754] [DEBUG] router - 无法找到 ./模块
+[2014-02-19 10:15:45.754] [INFO] router - 找不到路径
+[2014-02-19 10:15:45.756] [DEBUG] router - 无法找到 ./模块
+[2014-02-19 10:15:45.756] [INFO] router - 找不到路径
+[2014-02-19 10:15:46.761] [INFO] router - 找不到路径
+[2014-02-19 10:44:09.292] [INFO] sys - server is running!
+[2014-02-19 10:44:29.188] [INFO] router - 找不到路径
+[2014-02-19 10:44:53.001] [ERROR] router - [ReferenceError: fs is not defined]
+ReferenceError: fs is not defined
+    at exports.index (/develop/MyWorkSpace/worksapce/Server/router/index/index.js:3:13)
+    at exports.handleRequest (/develop/MyWorkSpace/worksapce/Server/router/index.js:27:28)
+    at Object.cb [as oncomplete] (fs.js:168:19)
+[2014-02-19 10:44:53.004] [ERROR] router - 逻辑错误
+[2014-02-19 10:45:08.591] [INFO] sys - server is running!
+[2014-02-19 10:48:49.602] [INFO] sys - server is running!
+[2014-02-19 10:48:53.097] [INFO] sys - server is running!
+[2014-02-19 10:57:55.141] [INFO] sys - server is running!
+[2014-02-19 11:03:14.798] [INFO] sys - server is running!
+[2014-02-26 09:18:28.144] [INFO] sys - server is running!
+[2014-02-26 09:18:28.144] [INFO] sys - server is running!
+[2014-02-26 09:18:28.159] [INFO] sys - server is running!
+[2014-02-26 09:18:28.162] [INFO] sys - server is running!
+[2014-02-26 09:18:28.163] [INFO] sys - server is running!
+[2014-02-26 09:18:28.165] [INFO] sys - server is running!
+[2014-02-26 09:18:28.167] [INFO] sys - server is running!
+[2014-02-26 09:18:28.170] [INFO] sys - server is running!
+[2014-02-26 09:18:39.234] [DEBUG] router - 无法找到 ./mange路径
+[2014-02-26 09:18:39.235] [INFO] router - 找不到路径
+[2014-02-26 09:18:39.250] [DEBUG] router - 无法找到 ./模块
+[2014-02-26 09:18:39.250] [INFO] router - 找不到路径
+[2014-02-26 09:18:39.260] [DEBUG] router - 无法找到 ./模块
+[2014-02-26 09:18:39.260] [INFO] router - 找不到路径
+[2014-02-26 09:18:39.260] [INFO] router - 找不到路径
+[2014-02-26 09:18:39.450] [DEBUG] router - 无法找到 ./favicon.ico路径
+[2014-02-26 09:18:39.450] [INFO] router - 找不到路径
+[2014-02-26 09:18:39.454] [DEBUG] router - 无法找到 ./模块
+[2014-02-26 09:18:39.456] [INFO] router - 找不到路径
+[2014-02-26 09:18:39.458] [DEBUG] router - 无法找到 ./模块
+[2014-02-26 09:18:39.458] [INFO] router - 找不到路径
+[2014-02-26 09:18:39.458] [INFO] router - 找不到路径
+[2014-02-26 09:18:43.845] [ERROR] router - { [Error: ENOENT, no such file or directory '/develop/MyWorkSpace/worksapce/Server/router/manage../../template/html/manage.html']
+  errno: 34,
+  code: 'ENOENT',
+  path: '/develop/MyWorkSpace/worksapce/Server/router/manage../../template/html/manage.html',
+  syscall: 'open' }
+Error: ENOENT, no such file or directory '/develop/MyWorkSpace/worksapce/Server/router/manage../../template/html/manage.html'
+    at Object.fs.openSync (fs.js:427:18)
+    at Object.fs.readFileSync (fs.js:284:15)
+    at exports.index (/develop/MyWorkSpace/worksapce/Server/router/manage/index.js:10:16)
+    at /develop/MyWorkSpace/worksapce/Server/router/index.js:27:28
+    at Object.cb [as oncomplete] (fs.js:168:19)
+[2014-02-26 09:18:43.848] [ERROR] router - 逻辑错误
+[2014-02-26 09:19:29.378] [INFO] sys - server is running!
+[2014-02-26 09:19:29.421] [INFO] sys - server is running!
+[2014-02-26 09:19:29.422] [INFO] sys - server is running!
+[2014-02-26 09:19:29.423] [INFO] sys - server is running!
+[2014-02-26 09:19:29.424] [INFO] sys - server is running!
+[2014-02-26 09:19:29.438] [INFO] sys - server is running!
+[2014-02-26 09:19:29.439] [INFO] sys - server is running!
+[2014-02-26 09:19:29.441] [INFO] sys - server is running!
+[2014-07-23 11:22:54.924] [INFO] sys - server is running!
+[2014-07-23 11:22:54.946] [INFO] sys - server is running!
+[2014-07-23 11:22:54.948] [INFO] sys - server is running!
+[2014-07-23 11:22:54.953] [INFO] sys - server is running!
+[2014-07-23 11:22:54.955] [INFO] sys - server is running!
+[2014-07-23 11:22:54.956] [INFO] sys - server is running!
+[2014-07-23 11:22:54.958] [INFO] sys - server is running!
+[2014-07-23 11:22:54.961] [INFO] sys - server is running!
+[2014-07-23 11:23:15.514] [INFO] sys - server is running!
+[2014-07-23 11:23:30.605] [ERROR] router - 逻辑错误
+[2014-07-23 11:23:39.067] [ERROR] router - [ReferenceError: fs is not defined]
+ReferenceError: fs is not defined
+    at exports.index (/develop/MyWorkSpace/worksapce/Server/router/order/index.js:3:11)
+    at /develop/MyWorkSpace/worksapce/Server/router/index.js:27:28
+    at Object.cb [as oncomplete] (fs.js:168:19)
+[2014-07-23 11:23:39.070] [ERROR] router - 逻辑错误
+[2014-07-23 11:23:42.968] [ERROR] router - [ReferenceError: fs is not defined]
+ReferenceError: fs is not defined
+    at exports.index (/develop/MyWorkSpace/worksapce/Server/router/order/index.js:3:11)
+    at /develop/MyWorkSpace/worksapce/Server/router/index.js:27:28
+    at Object.cb [as oncomplete] (fs.js:168:19)
+[2014-07-23 11:23:42.968] [ERROR] router - 逻辑错误
+[2014-07-23 11:23:56.969] [DEBUG] router - 无法找到 ./manager路径
+[2014-07-23 11:23:56.969] [INFO] router - 找不到路径
+[2014-07-23 11:23:56.974] [DEBUG] router - 无法找到 ./模块
+[2014-07-23 11:23:56.974] [INFO] router - 找不到路径
+[2014-07-23 11:23:56.976] [DEBUG] router - 无法找到 ./模块
+[2014-07-23 11:23:56.976] [INFO] router - 找不到路径
+[2014-07-23 11:23:56.976] [INFO] router - 找不到路径
+[2014-07-23 11:24:10.806] [ERROR] router - [ReferenceError: fs is not defined]
+ReferenceError: fs is not defined
+    at exports.index (/develop/MyWorkSpace/worksapce/Server/router/order/index.js:3:11)
+    at /develop/MyWorkSpace/worksapce/Server/router/index.js:27:28
+    at Object.cb [as oncomplete] (fs.js:168:19)
+[2014-07-23 11:24:10.806] [ERROR] router - 逻辑错误
+[2014-07-23 11:25:03.496] [INFO] sys - server is running!
+[2014-07-23 11:25:06.035] [DEBUG] router - 无法找到 ./orderForm/carstore.js路径
+[2014-07-23 11:25:06.036] [INFO] router - 找不到路径
+[2014-07-23 11:25:06.037] [DEBUG] router - 无法找到 .//orderForm模块
+[2014-07-23 11:25:06.037] [INFO] router - 找不到路径
+[2014-07-23 11:25:06.040] [DEBUG] router - 无法找到 ./模块
+[2014-07-23 11:25:06.040] [INFO] router - 找不到路径
+[2014-07-23 11:25:06.040] [INFO] router - 找不到路径
+[2014-07-23 11:25:10.468] [DEBUG] router - 无法找到 ./order/save路径
+[2014-07-23 11:25:10.468] [INFO] router - 找不到路径
+[2014-07-23 12:28:17.568] [INFO] sys - server is running!
+[2014-07-23 12:28:55.895] [INFO] sys - server is running!
+[2014-07-23 12:29:48.560] [INFO] sys - server is running!
+[2014-07-23 12:31:08.968] [INFO] sys - server is running!
+[2014-07-23 12:31:47.680] [INFO] sys - server is running!
+[2014-07-23 12:31:57.476] [INFO] sys - server is running!
+[2014-07-23 12:33:00.868] [INFO] sys - server is running!
+[2014-07-23 12:34:05.148] [INFO] sys - server is running!
+[2014-07-23 12:34:59.157] [INFO] sys - server is running!
+[2014-07-23 12:36:08.566] [INFO] sys - server is running!
+[2014-07-23 12:37:34.669] [INFO] sys - server is running!
+[2014-07-23 12:38:19.727] [INFO] sys - server is running!
+[2014-07-23 12:38:53.555] [INFO] sys - server is running!
+[2014-07-23 12:39:27.807] [INFO] sys - server is running!
+[2014-07-23 12:39:37.703] [INFO] sys - server is running!
+[2014-07-23 12:39:46.786] [INFO] sys - server is running!
+[2014-07-23 12:47:13.463] [INFO] sys - server is running!
+[2014-07-23 12:47:40.029] [INFO] sys - server is running!
+[2014-07-23 12:47:46.842] [INFO] sys - server is running!
+[2014-07-23 12:51:21.669] [INFO] sys - server is running!
+[2014-07-23 12:52:37.827] [INFO] sys - server is running!
+[2014-07-23 12:53:02.160] [INFO] sys - server is running!
+[2014-07-23 12:53:12.130] [INFO] sys - server is running!
+[2014-07-23 13:00:07.757] [INFO] sys - server is running!
