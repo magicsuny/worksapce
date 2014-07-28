@@ -110,7 +110,7 @@ function WXHandler(db) {
         {
           "type":"view",
           "name":"服务预约",
-          "url":"http://106.187.50.51/orderform.html"
+          "url":"http://106.187.50.51/neworder"
         },
         {
           "type":"click",
@@ -216,6 +216,7 @@ function WXHandler(db) {
         }else if (MsgType="image"){
           msg="你发的图片是："+PicUrl;
         }
+        this.type = 'text/xml; charset=utf-8';
         this.body='<xml><ToUserName><![CDATA['+FromUserName+']]></ToUserName><FromUserName><![CDATA['+ToUserName+']]></FromUserName><CreateTime>'+CreateTime+'</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA['+msg+']]></Content></xml>';
 
       });
