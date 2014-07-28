@@ -134,7 +134,7 @@ function WXHandler(db) {
             },
             {
               "type":"click",
-              "name":"",
+              "name":"我的爱车",
               "key":"V1001_GOOD"
             }]
         }]
