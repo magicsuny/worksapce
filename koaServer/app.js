@@ -6,7 +6,6 @@ var staticServer = require('koa-static');
 
 var router = require('./router');
 var logger = require('koa-logger');
-var bodyParser = require('koa-body-parser');
 var path = require('path');
 var mongoClient = require('mongodb').MongoClient;
 var initDbService = require('./libs/synCarListMongo');
@@ -18,7 +17,6 @@ app.use(logger());
 
 //
 app.use(staticServer(path.join(__dirname, 'public')));
-app.use(bodyParser());
 mongoClient.connect('mongodb://127.0.0.1:27017/car', function (err, db) {
   //initDbService.doJob(db);
   router(app,db);
