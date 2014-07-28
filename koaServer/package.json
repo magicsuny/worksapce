@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "bluebird": ">=1.0.1",
     "bufferhelper": "^0.2.0",
     "co-body": ">=0.0.1",
     "co-views": ">=0.2.0",

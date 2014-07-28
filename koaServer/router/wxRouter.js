@@ -1,6 +1,5 @@
 var crypto=require("crypto"),
     https = require('https'),
-    parse = require('co-body'),
     url = require('url'),
     xml=require("../node_modules/node-xml/lib/node-xml.js");
 var APP_ID='wxf72e9f4c5958f96d',
@@ -16,7 +15,7 @@ function WXHandler(db) {
       var echostr = checkSignature(query);
       if(echostr){
         requestAccessToken();
-        if(req.method=='GET'){
+        if(this.req.method=='GET'){
           this.body = echostr;
         }else{
           processMessage(query,this.body);
