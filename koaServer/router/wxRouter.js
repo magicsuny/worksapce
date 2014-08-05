@@ -44,7 +44,6 @@ function WXHandler(app,db) {
     };
     this.type = 'application/xml'
     this.body = wechatServiceCore.build(responseMsg);
-    console.log()
   }
 
   /**
