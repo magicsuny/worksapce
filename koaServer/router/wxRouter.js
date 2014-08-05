@@ -5,7 +5,7 @@ var crypto = require("crypto"),
   config = require('../config'),
   WechatServiceCore = require('wechat-koa');
 var wechatServiceCore = new WechatServiceCore({
-  store: {type: 'mongo'},
+  store: {type: 'mongo',url:config.mongo.url},
   appId: config.weixin.appId,
   appSecret: config.weixin.appSecret,
   appToken: config.weixin.token
