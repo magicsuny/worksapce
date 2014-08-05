@@ -1,5 +1,5 @@
 var later = require("later"),
-  http = require("./httpHelper");
+  http = require("./../httpHelper");
 
 /**
  * 分析汽車之家的汽車類別js腳本
@@ -108,22 +108,16 @@ function importToDB(db, data) {
 
   });
 
-
-
-
 }
 
-function clearHistoryData() {
-
-}
 
 
 /**
  * 執行任務
  */
 exports.doJob = function (db) {
-  var sched = later.parse.recur().on(1).hour().and().on(1).dayOfWeek();
-  t = later.setInterval(function () {
+  var sched = later.parse.recur().every(1).hour().and().on(1).dayOfWeek();
+  later.setInterval(function () {
     touchJS(function (err, data) {
       importToDB(db, data);
     });
