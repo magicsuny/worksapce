@@ -3,9 +3,9 @@ var parse = require('co-body'),
   WechatServiceCore = require('wechat-koa');
 var wechatServiceCore = new WechatServiceCore({
   store: {type: 'mongo',url:config.mongo.url},
-  appId: config.weixin.appId,
-  appSecret: config.weixin.appSecret,
-  appToken: config.weixin.token
+  appId: config.weixin.APP_ID,
+  appSecret: config.weixin.APP_SECRET,
+  token: config.weixin.TOKEN
 });
 function WXHandler(db) {
   /**
