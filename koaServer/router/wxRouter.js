@@ -1,7 +1,4 @@
-var crypto = require("crypto"),
-  https = require('https'),
-  url = require('url'),
-  parse = require('co-body'),
+var parse = require('co-body'),
   config = require('../config'),
   WechatServiceCore = require('wechat-koa');
 var wechatServiceCore = new WechatServiceCore({
