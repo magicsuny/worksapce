@@ -91,8 +91,8 @@ function importToDB(db, data) {
       sp['sub_brand'] = subBrand;
       var brand = carBrands[subBrand['brandId']];
       sp['brand'] = brand;
-      sp['ourPrice'] = Math.round(Math.random()*200+300);
-      sp['ssssPrice'] = Math.round(Math.random()*300+300+Math.random()*100);
+      sp['ourPrice'] = Math.round(Math.random()*200+200);
+      sp['ssssPrice'] = Math.round(Math.random()*300+300+Math.random()*300+Math.random()*200);
       results.push(sp);
     }
   }
