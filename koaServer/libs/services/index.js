@@ -3,6 +3,6 @@
  */
 var synClarListMongoService = require('./synCarListMongo');
 exports.doJob = function (db) {
-  synClarListMongoService.doJob(db);
+ // synClarListMongoService.doJob(db);
 
 }

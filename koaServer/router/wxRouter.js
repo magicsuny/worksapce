@@ -7,7 +7,8 @@ var wechatServiceCore = new WechatServiceCore({
   appSecret: config.weixin.APP_SECRET,
   token: config.weixin.TOKEN
 });
-function WXHandler(db) {
+function WXHandler(app,db) {
+
   /**
    * 微信校验方法
    */
@@ -33,7 +34,17 @@ function WXHandler(db) {
       this.body = 'Bad Token!';
     }
     var postQuery = yield parse.other(this);
-    wechatServiceCore.parse(postQuery);
+    var msg = yield wechatServiceCore.parse(postQuery);
+    var responseMsg = {
+      "toUserName":msg.FromUserName,
+      "fromUserName":msg.ToUserName,
+      "createTime":new Date().toTimeString(),
+      "msgType":"text",
+      "content":"收到"
+    };
+    this.type = 'application/xml'
+    this.body = wechatServiceCore.build(responseMsg);
+    console.log()
   }
 
   /**

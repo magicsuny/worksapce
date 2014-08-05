@@ -9,7 +9,7 @@ module.exports = function(app,db){
   app.use(router(app));
   var orderHandler = new OrderHandler(db);
   var carInfoHandler = new CarInfoHandler(db);
-  var wxHandler = new WXHandler(db);
+  var wxHandler = new WXHandler(app,db);
 
   app.get('/neworder', orderHandler.newOrder);
 
