@@ -1,6 +1,6 @@
 /*/.idea
 /*/.idea/*
 /bak
-/*/node_modules
+/*/node_modules/
 !/koaServer/node_modules/co-body/lib/other.js
 
