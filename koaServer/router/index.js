@@ -11,7 +11,7 @@ module.exports = function(app,db){
   var orderHandler = new OrderHandler(db);
   var defaultHandler = new DefaultHandler(db);
   var carInfoHandler = new CarInfoHandler(db);
-  var wxHandler = new WXHandler(app,db);
+  var wxHandler = new WXHandler(db);
   app.get('/oauth',defaultHandler.oauth);
 
   app.get('/neworder', orderHandler.newOrder);

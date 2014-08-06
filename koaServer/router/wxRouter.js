@@ -1,18 +1,41 @@
 var parse = require('co-body'),
+  co = require('koa/node_modules/co'),
   config = require('../config'),
+  User = require('../model/user'),
+  UserDAO = require('../dao/userDAO'),
   WechatServiceCore = require('wechat-koa');
 var wechatServiceCore = new WechatServiceCore({
-  store: {type: 'mongo',url:config.mongo.url},
+  store: {type: 'mongo', url: config.mongo.url},
   appId: config.weixin.APP_ID,
   appSecret: config.weixin.APP_SECRET,
   token: config.weixin.TOKEN
 });
-function WXHandler(app,db) {
-  wechatServiceCore.on('subscribeEvent',function(obj){
-    console.log(obj);
+function WXHandler(db) {
+  var userDAO = new UserDAO(db);
+  wechatServiceCore.on('subscribeEvent', function (err, obj) {
+    if (err) {
+      throw err;
+    }
+    var openId = obj.FromUserName;
+    if (openId) {
+      co(function*() {
+        var obj = null;
+        try {
+          obj = yield wechatServiceCore.requestUserInfo(openId);
+        } catch (e) {
+          console.log(e);
+        }
+        if (obj) {
+          var user = User.initWidthWechatUserInfo(obj);
+          yield userDAO.saveUser(user);
+        }
+      })();
+    }
+    console.log("user:" + openId + " subscribe");
+    return true;
   });
 
-  wechatServiceCore.on('unsubscribeEvent',function(obj){
+  wechatServiceCore.on('unsubscribeEvent', function (err, obj) {
     console.log(obj);
   });
 
@@ -43,12 +66,13 @@ function WXHandler(app,db) {
     }
     var postQuery = yield parse.other(this);
     var msg = yield wechatServiceCore.parse(postQuery);
+    console.log(msg);
     var responseMsg = {
-      "toUserName":msg.FromUserName,
-      "fromUserName":msg.ToUserName,
-      "createTime":new Date().toTimeString(),
-      "msgType":"text",
-      "content":"收到"
+      "toUserName": msg.FromUserName,
+      "fromUserName": msg.ToUserName,
+      "createTime": new Date().toTimeString(),
+      "msgType": "text",
+      "content": "收到"
     };
     this.type = 'application/xml'
     this.body = wechatServiceCore.build(responseMsg);
@@ -96,7 +120,7 @@ function WXHandler(app,db) {
         {
           "type": "view",
           "name": "预约",
-          "url": "http://106.187.50.51/neworder"
+          "url": "https://open.weixin.qq.com/connect/oauth2/authorize?appid="+config.weixin.APP_ID+"&redirect_uri=http://106.187.50.51/neworder&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect"
         },
         {
           "type": "click",
