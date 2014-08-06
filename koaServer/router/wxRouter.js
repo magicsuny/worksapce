@@ -63,6 +63,7 @@ function WXHandler(db) {
     if (!check) {
       this.status = 500;
       this.body = 'Bad Token!';
+      console.log(this.body);
     }
     var postQuery = yield parse.other(this);
     var msg = yield wechatServiceCore.parse(postQuery);
