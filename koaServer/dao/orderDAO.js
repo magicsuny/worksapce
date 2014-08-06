@@ -11,6 +11,13 @@ function OrderDAO(db) {
     return new OrderDAO(db);
   }
 
-  var carInfo = db.collection("car");
+  var orders = db.collection("orders");
 
+  this.getCarModel = function (order){
+    return function(callback){
+      var query = {'brand.id':parseInt(brandId),'sub_brand.id':parseInt(subBrandId)};
+      var cur = carInfo.find(query).sort({name:1});
+      cur.toArray(callback);
+    }
+  }
 }

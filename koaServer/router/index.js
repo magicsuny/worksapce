@@ -3,15 +3,19 @@
  */
 var router       = require('koa-router');
 var OrderHandler = require('./order');
+var DefaultHandler = require('./default');
 var CarInfoHandler = require('./carInfo');
 var WXHandler = require('./wxRouter');
 module.exports = function(app,db){
   app.use(router(app));
   var orderHandler = new OrderHandler(db);
+  var defaultHandler = new DefaultHandler(db);
   var carInfoHandler = new CarInfoHandler(db);
   var wxHandler = new WXHandler(app,db);
+  app.get('/oauth',defaultHandler.oauth);
 
   app.get('/neworder', orderHandler.newOrder);
+  app.post('/saveorder', orderHandler.saveOrder);
 
   app.post('/getCarSubBrands',carInfoHandler.getSubCarBrand);
 

@@ -101,7 +101,7 @@ function importToDB(db, data) {
   cars.insert(results, function(err, result) {
     "use strict";
     var endTime = new Date().getTime();
-    console.log('import to mongodb last:'+(endTime - startTime));
+    console.log(new Date()+': import to mongodb last:'+(endTime - startTime));
     if (err) {
       console.log(err);
       return;

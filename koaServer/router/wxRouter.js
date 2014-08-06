@@ -8,6 +8,13 @@ var wechatServiceCore = new WechatServiceCore({
   token: config.weixin.TOKEN
 });
 function WXHandler(app,db) {
+  wechatServiceCore.on('subscribeEvent',function(obj){
+    console.log(obj);
+  });
+
+  wechatServiceCore.on('unsubscribeEvent',function(obj){
+    console.log(obj);
+  });
 
   /**
    * 微信校验方法
@@ -23,6 +30,7 @@ function WXHandler(app,db) {
       }
     }
   }
+
 
   /**
    * 响应消息
