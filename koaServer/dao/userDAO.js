@@ -24,7 +24,13 @@ function UserDAO(db) {
     return function(next){
       var query = {'_id':id};
       var cur = users.findOne(query);
-      cur.toArray(next);
+      cur.toArray(function(err,result){
+        if(result>0){
+          next(err,result);
+        }else{
+          next(err,null);
+        }
+      });
     }
   }
 }

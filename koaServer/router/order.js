@@ -12,13 +12,12 @@ function OrderHandler(db) {
   var userDAO = new UserDAO(db);
   this.newOrder = function *() {
     var query = url.parse(this.req.url, true).query;
-    var userInfo = {};
+    var userInfo = null;
     var accessTokenInfo = null;
     if (query.code) {
       try {
         accessTokenInfo = yield wechatService.oAuthAccessTokenRequest(query.code);
       } catch (e) {
-        console.log(e);
         this.status = 500;
         this.body = e.errmsg;
         return;
