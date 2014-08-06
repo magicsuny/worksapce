@@ -67,17 +67,32 @@ function WXHandler(db) {
     var postQuery = yield parse.other(this);
     var msg = yield wechatServiceCore.parse(postQuery);
     console.log(msg);
-    var responseMsg = {
-      "toUserName": msg.FromUserName,
-      "fromUserName": msg.ToUserName,
-      "createTime": new Date().toTimeString(),
-      "msgType": "text",
-      "content": "收到"
-    };
+
     this.type = 'application/xml'
-    this.body = wechatServiceCore.build(responseMsg);
+    this.body = yield responseMsgFunc();
+    console.log(this.body);
   }
 
+  function responseMsgFunc(){
+    return function(next){
+      wechatServiceCore.once('textMsg', function (err, result) {
+        var responseMsg = {
+          "toUserName": result.FromUserName,
+          "fromUserName": result.ToUserName,
+          "createTime": new Date().getTime(),
+          "msgType": "text",
+          "content": "收到"
+        };
+        var resMsg = wechatServiceCore.build(responseMsg);
+        next(err,resMsg);
+      });
+
+      wechatServiceCore.on('locationEvent', function (err, result) {
+
+      });
+
+    }
+  }
   /**
    * 创建菜单
    * @param data
@@ -153,29 +168,6 @@ function WXHandler(db) {
     wechatServiceCore.createMenu(menuJson);
   }
 
-  wechatServiceCore.on('textMsg', function (err, result) {
-
-  });
-
-  wechatServiceCore.on('imageMsg', function (err, result) {
-
-  });
-
-  wechatServiceCore.on('voiceMsg', function (err, result) {
-
-  });
-
-  wechatServiceCore.on('videoMsg', function (err, result) {
-
-  });
-
-  wechatServiceCore.on('locationMsg', function (err, result) {
-
-  });
-
-  wechatServiceCore.on('linkMsg', function (err, result) {
-
-  });
 
 
 }
