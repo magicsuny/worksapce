@@ -66,17 +66,28 @@ function WXHandler(db) {
       console.log(this.body);
     }
     var postQuery = yield parse.other(this);
-    var msg = yield wechatServiceCore.parse(postQuery);
-    console.log(msg);
+    try{
+      yield wechatServiceCore.parse(postQuery);
+    }catch(e){
+      console.log(postQuery+" parse ERROR! :"+e);
+      this.status = 500;
+      this.body = e.errmsg;
+    }
+
 
     this.type = 'application/xml'
-    this.body = yield responseMsgFunc();
+    try{
+      this.body = yield responseMsgFunc();
+    }catch(e){
+      this.body = '';
+    }
+
     console.log(this.body);
   }
 
   function responseMsgFunc(){
     return function(next){
-      wechatServiceCore.on('textMsg', function (err, result) {
+      wechatServiceCore.once('textMsg', function (err, result) {
         var responseMsg = {
           "toUserName": result.FromUserName,
           "fromUserName": result.ToUserName,
@@ -88,9 +99,18 @@ function WXHandler(db) {
         next(err,resMsg);
       });
 
-      wechatServiceCore.on('locationEvent', function (err, result) {
+      wechatServiceCore.once('LOCATIONEvent', function (err, result) {
 
         next(err,'');
+      });
+
+      wechatServiceCore.once('locationMsg', function (err, result) {
+
+        next(err,'');
+      });
+      //延迟处理其他未实现事件
+      process.nextTick(function(){
+        next(null,'');
       });
 
     }
