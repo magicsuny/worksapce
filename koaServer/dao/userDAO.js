@@ -23,8 +23,7 @@ function UserDAO(db) {
   this.loadUserById = function(id){
     return function(next){
       var query = {'_id':id};
-      var cur = users.findOne(query);
-      cur.toArray(function(err,result){
+      var cur = users.findOne(query,function(err,result){
         if(result>0){
           next(err,result);
         }else{
