@@ -76,7 +76,7 @@ function WXHandler(db) {
 
   function responseMsgFunc(){
     return function(next){
-      wechatServiceCore.once('textMsg', function (err, result) {
+      wechatServiceCore.on('textMsg', function (err, result) {
         var responseMsg = {
           "toUserName": result.FromUserName,
           "fromUserName": result.ToUserName,
@@ -90,6 +90,7 @@ function WXHandler(db) {
 
       wechatServiceCore.on('locationEvent', function (err, result) {
 
+        next(err,'');
       });
 
     }
