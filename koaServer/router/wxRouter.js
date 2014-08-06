@@ -22,6 +22,7 @@ function WXHandler(db) {
         }
         if (obj) {
           var user = User.initWidthWechatUserInfo(obj);
+          console.log(obj);
           console.log(user);
           yield userDAO.saveUser(user);
         }
