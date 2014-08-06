@@ -25,7 +25,7 @@ function OrderHandler(db) {
     }
     this.session.userId = accessTokenInfo.openid;
     this.session.accessToken = accessTokenInfo.access_token;
-    userInfo = userDAO.loadUserById(accessTokenInfo.openid);
+    userInfo =yield userDAO.loadUserById(accessTokenInfo.openid);
     console.log(userInfo);
     var carBrands = yield carInfoDAO.getCarBrand();
     this.body = yield render('/order/neworder', {userInfo:userInfo,carBrands: carBrands});
