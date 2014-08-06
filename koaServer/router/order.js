@@ -12,7 +12,6 @@ function OrderHandler(db) {
   var userDAO = new UserDAO(db);
   this.newOrder = function *() {
     var query = url.parse(this.req.url, true).query;
-    query.code = '023becb87b97694cdb278ff34655a475';
     var userInfo = {};
     var accessTokenInfo = null;
     if (query.code) {
