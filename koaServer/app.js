@@ -11,6 +11,8 @@ var logger = require('koa-logger');
 var path = require('path');
 var mongoClient = require('mongodb').MongoClient;
 var initDbService = require('./libs/services');
+var wechatkoa = require('wechat-koa');
+
 var app = koa();
 
 // middleware

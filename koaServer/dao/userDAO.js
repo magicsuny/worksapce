@@ -8,7 +8,7 @@ function UserDAO(db) {
    * to the global object. Log a warning and call it correctly. */
   if (false === (this instanceof UserDAO)) {
     console.log('Warning: UserDAO constructor called without "new" operator');
-    return new OrderDAO(db);
+    return new UserDAO(db);
   }
 
   var users = db.collection("users");
@@ -17,6 +17,14 @@ function UserDAO(db) {
     return function(next){
       var query = {'_id':user._id};
       users.update(query,{$set:user},{ upsert: true, safe: true },next);
+    }
+  }
+
+  this.loadUserById = function(id){
+    return function(next){
+      var query = {'_id':id};
+      var cur = users.findOne(query);
+      cur.toArray(next);
     }
   }
 }

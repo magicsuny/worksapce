@@ -3,15 +3,10 @@ var parse = require('co-body'),
   config = require('../config'),
   User = require('../model/user'),
   UserDAO = require('../dao/userDAO'),
-  WechatServiceCore = require('wechat-koa');
-var wechatServiceCore = new WechatServiceCore({
-  store: {type: 'mongo', url: config.mongo.url},
-  appId: config.weixin.APP_ID,
-  appSecret: config.weixin.APP_SECRET,
-  token: config.weixin.TOKEN
-});
+  wechatServiceCore = require('../libs/wechatService');
 function WXHandler(db) {
   var userDAO = new UserDAO(db);
+
   wechatServiceCore.on('subscribeEvent', function (err, obj) {
     if (err) {
       throw err;
@@ -27,6 +22,7 @@ function WXHandler(db) {
         }
         if (obj) {
           var user = User.initWidthWechatUserInfo(obj);
+          console.log(user);
           yield userDAO.saveUser(user);
         }
       })();
