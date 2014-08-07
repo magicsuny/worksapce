@@ -22,12 +22,13 @@ function OrderHandler(db) {
         this.body = e.errmsg;
         return;
       }
+      this.session.userId = accessTokenInfo.openid;
+      this.session.accessToken = accessTokenInfo.access_token;
+      console.log(accessTokenInfo.openid);
+      userInfo = yield userDAO.loadUserById(accessTokenInfo.openid);
+      console.log(userInfo);
     }
-    this.session.userId = accessTokenInfo.openid;
-    this.session.accessToken = accessTokenInfo.access_token;
-    console.log(accessTokenInfo.openid);
-    userInfo = yield userDAO.loadUserById(accessTokenInfo.openid);
-    console.log(userInfo);
+
     var carBrands = yield carInfoDAO.getCarBrand();
     this.body = yield render('/order/neworder', {userInfo:userInfo,carBrands: carBrands});
   }
@@ -35,7 +36,7 @@ function OrderHandler(db) {
 
   this.saveOrder = function*() {
     var formBody = yield parse.form(this);
-
+    this.body = yield render('/order/ordercomplete');
   }
 }
 
