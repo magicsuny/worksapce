@@ -118,7 +118,7 @@ function importToDB(db, data) {
  * 執行任務
  */
 exports.doJob = function (db) {
-  var sched = later.parse.recur().on(1).hour().and().first().dayOfWeek();
+  var sched = later.parse.recur().on(1).hour().first().dayOfWeek();
   later.setInterval(function () {
     touchJS(function (err, data) {
       importToDB(db, data);
