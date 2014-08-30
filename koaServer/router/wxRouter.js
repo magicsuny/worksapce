@@ -126,23 +126,13 @@ function WXHandler(db) {
           "sub_button": [
             {
               "type": "view",
-              "name": "我的订单",
-              "url": "http://106.187.50.51/orderlist"
-            },
-            {
-              "type": "view",
-              "name": "车型设置",
-              "url": "http://106.187.50.51/mycar"
-            },
-            {
-              "type": "view",
               "name": "优惠券",
               "url": "http://106.187.50.51/mycar"
             },
             {
               "type": "view",
               "name": "保养记录",
-              "url": "http://106.187.50.51/mycar"
+              "url": "http://106.187.50.51/orderlist"
             },
             {
               "type": "view",
@@ -161,9 +151,9 @@ function WXHandler(db) {
           "name": "你懂的",
           "sub_button": [
             {
-              "type": "view",
+              "type": "click",
               "name": "保险",
-              "url": "http://v.qq.com/"
+              "url": "V1001_GOOD"
             },
             {
               "type": "click",
