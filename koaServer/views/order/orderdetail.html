@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cleartype" content="on"/>
+    <title></title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+</head>
+<body>
+<div data-role="page">
+
+    <div role="main" class="ui-content">
+        <form id="orderForm" action="/saveOrder" method="post" runat="server">
+
+            <label >车辆里程:</label>
+            <label >10000</label>
+            <label >预约日期:</label>
+            <label  class="select">2014年8月30日</label>
+            <label  class="select">预约时间段：</label>
+            <label  class="select">11:00 - 13:00</label>
+            <label  class="select">2014 迈腾1.8TSI</label>
+            <label  class="select">北京 朝阳区 长虹桥111号</label>
+            <label  class="select">机油：壳牌</label>
+            <label  class="select">机滤：马勒</label>
+            <label  class="select">空滤：3M</label>
+
+            <label >保养价格：<span id="ourPrice" >700</span></label>
+        </form>
+        <div id="submitContent" style="display:none">
+
+        </div>
+    </div><!-- /content -->
+</body>
+</html>

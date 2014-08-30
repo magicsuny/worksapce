@@ -42,6 +42,20 @@ function OrderHandler(db) {
   this.orderList = function*(){
     this.body = yield render('/order/orderList');
   }
+
+
+  this.orderDetail = function*(){
+    this.body = yield render('/order/orderdetail');
+  }
+
+  this.coupon = function*(){
+    this.body = yield render('/coupon/coupon');
+  }
+
+  this.score = function*(){
+    this.body = yield render('/score/score');
+  }
+
 }
 
 

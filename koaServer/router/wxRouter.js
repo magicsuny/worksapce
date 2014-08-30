@@ -127,7 +127,7 @@ function WXHandler(db) {
             {
               "type": "view",
               "name": "优惠券",
-              "url": "http://106.187.50.51/mycar"
+              "url": "http://106.187.50.51/coupon"
             },
             {
               "type": "view",

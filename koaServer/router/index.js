@@ -16,7 +16,12 @@ module.exports = function(app,db){
 
   app.get('/neworder', orderHandler.newOrder);
   app.get('/orderlist', orderHandler.orderList);
+  app.get('/orderdetail', orderHandler.orderDetail);
   app.post('/saveorder', orderHandler.saveOrder);
+
+  app.get('/coupon',orderHandler.coupon);
+
+  app.get('/score',orderHandler.score);
 
   app.post('/getCarSubBrands',carInfoHandler.getSubCarBrand);
 
