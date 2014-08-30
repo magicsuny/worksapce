@@ -156,18 +156,23 @@ function WXHandler(db) {
               "url": "http://www.ecpic.com.cn/"
             },
             {
-              "type": "click",
+              "type": "view",
               "name": "促销",
-              "key": "V1001_GOOD"
+              "url": "http://www.meituan.com/"
             },
             {
-              "type": "click",
+              "type": "view",
               "name": "车友活动",
-              "key": "V1001_GOOD"
+              "url": "http://club.ds.com.cn/"
             },
             {
               "type": "click",
               "name": "线下店",
+              "key": "V1001_GOOD"
+            },
+            {
+              "type": "click",
+              "name": "app下载",
               "key": "V1001_GOOD"
             }
           ]
