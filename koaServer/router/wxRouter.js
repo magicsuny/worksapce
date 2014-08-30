@@ -137,7 +137,7 @@ function WXHandler(db) {
             {
               "type": "view",
               "name": "我的积分",
-              "url": "http://106.187.50.51/mycar"
+              "url": "http://106.187.50.51/score"
             }
           ]
         },
@@ -174,7 +174,8 @@ function WXHandler(db) {
         }
       ]
     };
-    wechatServiceCore.createMenu(menuJson);
+    yield wechatServiceCore.createMenu(menuJson);
+    this.body = 'complete';
   }
 
 
