@@ -15,6 +15,7 @@ module.exports = function(app,db){
   app.get('/oauth',defaultHandler.oauth);
 
   app.get('/neworder', orderHandler.newOrder);
+  app.get('/orderlist', orderHandler.orderList);
   app.post('/saveorder', orderHandler.saveOrder);
 
   app.post('/getCarSubBrands',carInfoHandler.getSubCarBrand);

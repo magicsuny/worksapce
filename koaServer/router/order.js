@@ -38,6 +38,10 @@ function OrderHandler(db) {
     var formBody = yield parse.form(this);
     this.body = yield render('/order/ordercomplete');
   }
+
+  this.orderList = function*(){
+    this.body = yield render('/order/orderList');
+  }
 }
 
 
