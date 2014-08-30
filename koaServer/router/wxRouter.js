@@ -151,9 +151,9 @@ function WXHandler(db) {
           "name": "你懂的",
           "sub_button": [
             {
-              "type": "click",
+              "type": "view",
               "name": "保险",
-              "url": "V1001_GOOD"
+              "url": "http://www.ecpic.com.cn/"
             },
             {
               "type": "click",
